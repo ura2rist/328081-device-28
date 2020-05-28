@@ -47,33 +47,34 @@
 			</div>
 			<aside>
 				<div>
-					<h3>Фильтр:</h3>
-				</div>
-				<div>
-					<h3>Стоимость</h3>
-
+					<h2>Фильтр:</h2>
 				</div>
 				<form method="post" action="https://echo.htmlacademy.ru/">
-					<div>
-						<h3>Цвет</h3>
+					<fieldset>
+						<legend>Стоимость</legend>
+						<ul>
+							<label><input type="text" name="min"></label>
+							<label><input type="text" name="max"></label>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Цвет</legend>
 						<ul>
 							<li><label><input type="checkbox" name="black">Черный</label></li>
 							<li><label><input type="checkbox" name="white">Белый</label></li>
 							<li><label><input type="checkbox" name="blue">Синий</label></li>
 							<li><label><input type="checkbox" name="red">Красный</label></li>
-							<li><label><input type="checkbox" name="Pink">Розовый</label></li>
+							<li><label><input type="checkbox" name="pink">Розовый</label></li>
 						</ul>
-					</div>
-					<div>
-						<h3>Bluetooth</h3>
+					</fieldset>
+					<fieldset>
+						<legend>Bluetooth</legend>
 						<ul>
-							<li><label><input type="radio" name="luetooth" value="yes">Есть</label></li>
-							<li><label><input type="radio" name="luetooth" value="no">Нет</label></li>
+							<li><label><input type="radio" name="bluetooth" value="yes">Есть</label></li>
+							<li><label><input type="radio" name="bluetooth" value="no">Нет</label></li>
 						</ul>
-					</div>
-					<div>
-						<button type="button">Показать</button>
-					</div>
+					</fieldset>
+					<button type="submit">Показать</button>
 				</form>
 			</aside>
 			<section>
@@ -83,14 +84,14 @@
 					<li><a href="blank.html">По типу</a></li>
 					<li><a href="blank.html">По популярности</a></li>
 				</ul>
-				<a href="blank.html">Возрастание</a>
-				<a href="blank.html">убывание</a>
+				<a href="blank.html"><span class="visually-hidden">Возрастание</span></a>
+				<a href="blank.html"><span class="visually-hidden">убывание</span></a>
 			</section>
 			<section>
 				<h2>Каталог</h2>
 				<ul>
 					<li>
-						<img src="img/item-1 1.jpg" alt="Товар">
+						<img src="img/item-1_1.jpg" alt="Товар">
 						<div>
 							<h3><a href="blank.html">Любительская селфи-палка</a></h3>
 							<p>500 руб</p>
@@ -101,7 +102,7 @@
 						</div>
 					</li>
 					<li>
-						<img src="img/item-2 1.jpg" alt="Товар">
+						<img src="img/item-2_1.jpg" alt="Товар">
 						<div>
 							<h3><a href="blank.html">Профессиональная селфи-палка</a></h3>
 							<p>1 500 руб</p>
@@ -112,7 +113,7 @@
 						</div>
 					</li>
 					<li>
-						<img src="img/item-3 1.jpg" alt="Товар">
+						<img src="img/item-3_1.jpg" alt="Товар">
 						<div>
 							<h3><a href="blank.html">Непотопляемая селфи-палка</a></h3>
 							<p>2 500 руб</p>
@@ -163,9 +164,9 @@
 			</ul>
 			<a href="tel: +74954959595">Тел.: +7 (495) 495-95-95</a>
 			<ul>
-				<li><a href="blank.html">Фейсбук</a>></li>
-				<li><a href="blank.html">Инстаграм</a></li>
-				<li><a href="blank.html">Твитер</a></li>
+				<li><a href="blank.html"><span class="visually-hidden">Фейсбук</span></a>></li>
+				<li><a href="blank.html"><span class="visually-hidden">Инстаграм</span></a></li>
+				<li><a href="blank.html"><span class="visually-hidden">Твитер</span></a></li>
 			</ul>
 			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип аккадемии"></a>
 		</footer>
