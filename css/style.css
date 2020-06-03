@@ -1,13 +1,55 @@
 @font-face{
-	font-family: "Gilroy",
-	src: url("../fonts/gilroy/gilroyextrabold.ttf");
+	font-family: "Gilroy";
+	src: url("../fonts/gilroyextrabold.woff2");
 	font-style: normal;
 	font-weight: bold;
 }
 
 @font-face{
 	font-family: "Gilroy";
-	src: url("../fonts/gilroy/gilroylight.ttf");
+	src: url("../fonts/gilroyextrabold.woff");
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face{
+	font-family: "Gilroy";
+	src: url("../fonts/gilroylight.woff2");
+	font-style: normal;
+	font-weight: lighter;
+}
+
+@font-face{
+	font-family: "Gilroy";
+	src: url("../fonts/gilroylight.woff");
+	font-style: normal;
+	font-weight: lighter;
+}
+
+@font-face{
+	font-family: "Open Sans";
+	src: url("../fonts/opensans.woff");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "Open Sans";
+	src: url("../fonts/opensans.woff2");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: "Open Sans";
+	src: url("../fonts/opensanslight.woff");
+	font-style: normal;
+	font-weight: lighter;
+}
+
+@font-face{
+	font-family: "Open Sans";
+	src: url("../fonts/opensanslight.woff2");
 	font-style: normal;
 	font-weight: lighter;
 }
@@ -15,11 +57,37 @@
 :root{
 	--basic-color: #F7E296;
 	--footer-color: #363636;
+	--first-color: #000000;
+	--second-color: #464646;
+	--three-color: #7e7e7e;
+	--four-color: #e5e5e5;
+	--five-color: #FFFFFF;
+	--six-color: #F0C52E;
+	--seven-color: #91C92F;
+	--eight-color: #F6dada;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin:-1px;
+	border: 0;
+	padding: 0;
+	white-space:nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow:hidden;
+	background-position: 0 0;
 }
 
 body{
 	margin: 0;
-	padding: 
+	font-family: "Open Sans"; 
+	font-size: 15px;
+	min-width: 1160px;
 }
 
 .map,
@@ -27,7 +95,7 @@ body{
 	display: none;
 }
 
-header{
+.page-header{
 	background-color: var(--basic-color);
 }
 
@@ -36,20 +104,20 @@ header{
 	max-height: 35px;
 }
 
-header nav{
+.page-header .header-navigate{
 	font-size: 15px;
 }
 
-header a{
+.page-header a{
 	color: black;
 	text-decoration: none;
 }
 
-header ul{
+.page-header ul{
 	list-style: none;
 }
 
-header nav .main-menu{
+.header-navigate .main-menu{
 	font-family: Gilroy;
 	font-style: normal;
 	font-weight: 800;
@@ -57,17 +125,9 @@ header nav .main-menu{
 	text-transform: uppercase;
 }
 
-.account-menu,
-.compare,
-.cart{
-	font-family: "Open Sans";
-}
-
 .catalog-menu{
-	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: 300;
-	font-size: 15px;
 }
 
 .search-button{
@@ -88,7 +148,7 @@ header nav .main-menu{
     outline: none;
 }
 
-header .entry:before{
+.page-header .entry:before{
 	content: url(../img/icon_user.svg);
 	width: 13px;
 	height: 14px;
@@ -96,7 +156,7 @@ header .entry:before{
     background-position: center;
 }
 
-header .user:before{
+.page-header .user:before{
 	content: url(../img/icon_user.svg);
 	width: 13px;
 	height: 14px;
@@ -104,7 +164,7 @@ header .user:before{
     background-position: center;
 }
 
-header .compare:before{
+.page-header .compare:before{
 	content: url(../img/icon_chart.svg);
 	width: 14px;
 	height: 14px;
@@ -112,7 +172,7 @@ header .compare:before{
     background-position: center;
 }
 
-header .cart:before{
+.page-header .cart:before{
 	content: url(../img/icon_cart.svg);
 	width: 10px;
 	height: 10px;
@@ -158,10 +218,8 @@ header .cart:before{
 
 .about p,
 .contacts p{
-	font-family: Open Sans;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 15px;
 	line-height: 28px;
 }
 
@@ -181,15 +239,15 @@ header .cart:before{
     background-position: center;
 }
 
-footer{
+.page-footer{
 	background-color: var(--footer-color);
 }
 
-footer ul{
+.page-footer ul{
 	list-style: none;
 }
 
-footer .entry:before{
+.page-footer .entry:before{
 	content: url(../img/icon_user_f.svg);
 	width: 13px;
 	height: 14px;
@@ -197,7 +255,7 @@ footer .entry:before{
     background-position: center;
 }
 
-footer .compare:before{
+.page-footer .compare:before{
 	content: url(../img/icon_chart_f.svg);
 	width: 14px;
 	height: 14px;
@@ -205,7 +263,7 @@ footer .compare:before{
     background-position: center;
 }
 
-footer .cart:before{
+.page-footer .cart:before{
 	content: url(../img/icon_cart_f.svg);
 	width: 10px;
 	height: 10px;
@@ -214,22 +272,18 @@ footer .cart:before{
 }
 
 .footer-menu a{
-	font-family: Open Sans;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 15px;
 	line-height: 20px;
 	color: rgba(255, 255, 255, 0.7);
 	text-decoration: none;
 }
 
-footer p{
-	font-family: Open Sans;
+.page-footer p{
 	font-style: normal;
 	font-weight: 300;
-	font-size: 15px;
 	line-height: 20px;
-	color: #FFFFFF;
+	color: var(--five-color);
 }
 
 .footer-info-menu{
@@ -245,16 +299,14 @@ footer p{
 
 .footer-info-menu a{
 	text-decoration: none;
-	color: #FFFFFF;
+	color: var(--five-color);
 }
 
 .phone{
-	font-family: Open Sans;
 	font-style: normal;
 	font-weight: 300;
-	font-size: 15px;
 	line-height: 20px;
-	color: #FFFFFF;
+	color: var(--five-color);
 	text-decoration: none;
 }
 
@@ -286,11 +338,7 @@ footer p{
 	background-image: url('../img/instagram.svg'); 
 }
 
-.visually-hidden{
-	visibility: hidden;
-}
-
-aside legend{
+.option-search legend{
 	font-family: Gilroy;
 	font-style: normal;
 	font-weight: 800;
@@ -299,7 +347,6 @@ aside legend{
 }
 
 .form-filter{
-	font-family: Open Sans;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 14px;
@@ -337,7 +384,6 @@ aside legend{
 }
 
 .button-catalog{
-	font-family: Open Sans;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 13px;
