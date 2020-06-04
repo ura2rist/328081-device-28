@@ -385,11 +385,114 @@ body{
 .title-slide{
 	font-family: Gilroy, Arial;
 	font-style: normal;
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 47px;
 	line-height: 58px;
 }
 
+.title-slide:before{
+	content: "";
+	width: 80px;
+	height: 7px;
+	display: block;
+	background-color: var(--five-color);
+}
+
 .slide-product ul{
 	list-style: none;
+}
+
+.description-slide{
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.slide a{
+	font-family: Gilroy, Arial;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: var(--first-color);
+}
+
+.slide-char dt{
+	font-family: Gilroy, Arial;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.slide-char dd{
+	font-family: Gilroy, Arial;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: 42px;
+}
+
+.slide-button button{
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/slider-button-empty.svg);
+	background-repeat: no-repeat;
+	background-position: -2px 1px;
+	border: none; 
+	background-color: white;
+	cursor: pointer;
+}
+
+.slide-button .active-slide{
+	background-image: url(../img/slider-button.svg);
+	background-position: center;
+}
+
+.categories{
+	list-style: none;
+}
+
+.categories a{
+	color:var(--first-color);
+	font-family: Gilroy, Arial;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.categories li a:before{
+	content: '';
+	width: 160px;
+	height: 160px;
+	background-color: var(--basic-color);
+	display: block;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+.categories li:nth-child(1) a:before{
+	background-image: url(../img/popular-1.svg);
+}
+
+.categories li:nth-child(2) a:before{
+	background-image: url(../img/popular-2.svg);
+}
+
+.categories li:nth-child(3) a:before{
+	background-image: url(../img/group.svg);
+}
+
+.categories li:nth-child(4) a:before{
+	background-image: url(../img/group1.svg);
+}
+
+.categories li:nth-child(5) a:before{
+	background-image: url(../img/group2.svg);
+}
+
+.categories li:nth-child(6) a:before{
+	background-image: url(../img/popular-6.svg);
 }
