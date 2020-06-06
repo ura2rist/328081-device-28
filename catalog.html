@@ -40,41 +40,52 @@
 			</nav>
 		</header>
 		<main class="page-main">
-			<div>
+			<div class="breadcrumbs">
 				<h1>Моноподы для селфи</h1>
-				<ul>
+				<ul class="breadcrumbs__ul">
 					<li><a href="blank.html">Главная</a></li>
 					<li><a href="blank.html">Каталог товаров</a></li>
 					<li><a>Моноподы для селфи</a></li>
 				</ul>
 			</div>
 			<aside class="option-search">
-				<div>
-					<h2>Фильтр:</h2>
+				<div class="aside__header">
+					<h2 class="aside__title">Фильтр:</h2>
 				</div>
 				<form method="post" class="form-filter" action="https://echo.htmlacademy.ru/">
-					<fieldset>
+					<fieldset class="filter-item">
 						<legend>Стоимость</legend>
-						<ul>
-							<label><input type="text" name="min">От</label>
-							<label><input type="text" name="max">До</label>
-						</ul>
+						<div class="range-filter">
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="toggle toggle-min" tabindex="0">
+								</div>
+								<div class="toggle toggle-max" tabindex="0">
+								</div>
+							</div>
+							<div class="price-controls">
+								<label class="min-price">От <input type="number" name="min-price" value="0" step="100"></label>
+								<label class="max-price">От <input type="number" name="max-price" value="5000"></label>
+							</div>
+						</div>
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter__color">
 						<legend>Цвет</legend>
 						<ul>
-							<li><label><input type="checkbox" name="black">Черный</label></li>
-							<li><label><input type="checkbox" name="white">Белый</label></li>
-							<li><label><input type="checkbox" name="blue">Синий</label></li>
-							<li><label><input type="checkbox" name="red">Красный</label></li>
-							<li><label><input type="checkbox" name="pink">Розовый</label></li>
+							<li><input type="checkbox" class="custom-checkbox" name="black" id="color__black"><label for="color__black">Черный</label></li>
+							<li><input type="checkbox" class="custom-checkbox" name="white" id="color__white"><label for="color__white">Белый</label></li>
+							<li><input type="checkbox" class="custom-checkbox" name="blue" id="color__blue"><label for="color__blue">Синий</label></li>
+							<li><input type="checkbox" class="custom-checkbox" name="red" id="color__red"><label for="color__red">Красный</label></li>
+							<li><input type="checkbox" class="custom-checkbox" name="pink" id="color__pink"><label for="color__pink">Розовый</label></li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="filter__bluetooth">
 						<legend>Bluetooth</legend>
 						<ul>
-							<li><label><input type="radio" name="bluetooth" value="yes">Есть</label></li>
-							<li><label><input type="radio" name="bluetooth" value="no">Нет</label></li>
+							<li><input type="radio" class="custom-radio" name="bluetooth" id="blue_yes" value="yes"><label for="blue_yes">Есть</label></li>
+							<li><input type="radio" class="custom-radio" name="bluetooth" id="blue_no" value="no"><label for="blue_no">Нет</label></li>
 						</ul>
 					</fieldset>
 					<button type="submit" class="button-view">Показать</button>
@@ -83,12 +94,12 @@
 			<section class="sorting">
 				<h2>Сортировка:</h2>
 				<ul>
-					<li><a href="blank.html">По цене</a></li>
-					<li><a href="blank.html">По типу</a></li>
-					<li><a href="blank.html">По популярности</a></li>
+					<li><a href="blank.html" class="sorting_param sort_active">По цене</a></li>
+					<li><a href="blank.html" class="sorting_param">По типу</a></li>
+					<li><a href="blank.html" class="sorting_param">По популярности</a></li>
 				</ul>
-				<a href="blank.html"><span class="visually-hidden">Возрастание</span></a>
-				<a href="blank.html"><span class="visually-hidden">убывание</span></a>
+				<a href="blank.html" class="sort_up sort_up_click"><span class="visually-hidden">Возрастание</span></a>
+				<a href="blank.html" class="sort_down"><span class="visually-hidden">убывание</span></a>
 			</section>
 			<section class="catalog">
 				<h2>Каталог</h2>
@@ -138,14 +149,14 @@
 						</div>
 					</li>
 				</ul>
-				<div>
-					<a href="blank.html">Назад</a>
+				<div class="pagination">
+					<a href="blank.html" class="pagination_active">Назад</a>
 					<ul>
-						<li><a>1</a></li>
+						<li><a class="pagination_active">1</a></li>
 						<li><a href="blank.html">2</a></li>
 						<li><a href="blank.html">3</a></li>
 					</ul>
-					<a href="blank.html">Вперед</a>
+					<a href="blank.html" class="pagination_active">Вперед</a>
 				</div>
 			</section>
 		</main>
