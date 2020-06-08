@@ -10,7 +10,7 @@
 	<body>
 		<header class="page-header">
 			<nav class="header-navigate">
-				<a><img src="img/logo.svg" alt="Логотип" class="logo-header" width="163" height="35px"></a>
+				<a class="logo"><img src="img/logo.svg" alt="Логотип" class="logo-header" width="163" height="35px"></a>
 				<form class="search-form">
 					<button type="submit" class="search-button"></button>
 					<input type="text" name="search" placeholder="Поиск по сайту">
@@ -22,7 +22,7 @@
 				<a href="blank.html" class="cart">Корзина</a>
 				<ul class="main-menu">
 					<li>
-						<a href="blank.html" class="catalog">Каталог товаров</a>			
+						<a href="blank.html" class="main-menu-link">Каталог товаров</a>			
 						<ul class="catalog-menu">
 							<li><a href="blank.html">Виртуальная реальность</a></li>
 							<li><a href="blank.html">Моноподы для селфи</a></li>
@@ -32,17 +32,17 @@
 							<li><a href="blank.html">Квадрокоптеры</a></li>
 						</ul>
 					</li>
-					<li><a href="blank.html">Доставка</a></li>
-					<li><a href="blank.html">Гарантия</a></li>
-					<li><a href="blank.html">Контакты</a></li>
+					<li><a href="blank.html" class="main-menu-link">Доставка</a></li>
+					<li><a href="blank.html" class="main-menu-link">Гарантия</a></li>
+					<li><a href="blank.html" class="main-menu-link">Контакты</a></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<h1>Интернет-магазин Device</h1>
-			<section class="slide-product">
+			<section class="slider-product">
 				<h2>Cлайдер товаров</h2>
-				<ul>
+				<ul class="slider-list">
 					<li class="slide">
 						<a><img src="img/slider-1_1.png" alt="Товар" width="384" height="486"></a>
 						<p class="title-slide">Делай селфи, как Бен Стиллер!</p>
@@ -80,49 +80,49 @@
 						</dl>
 					</li>
 				</ul>
-				<ul class="slide-button">
-					<li><button class="slide-button-this active-slide" type="button"><span class="visually-hidden">slide 1</span></button></li>
-					<li><button class="slide-button-this" type="button"><span class="visually-hidden">slide 2</span></button></li>
-					<li><button class="slide-button-this" type="button"><span class="visually-hidden">slide 3</span></button></li>
+				<ul class="slider-toggles">
+					<li><button class="slider-toggle slider-toggle-active" type="button"><span class="visually-hidden">slide 1</span></button></li>
+					<li><button class="slider-toggle" type="button"><span class="visually-hidden">slide 2</span></button></li>
+					<li><button class="slider-toggle" type="button"><span class="visually-hidden">slide 3</span></button></li>
 				</ul>
 			</section>
 			<ul class="categories">
-				<li class="categories-li">
+				<li class="categories-item">
 					<a href="blank.html">Виртуальная реальность</a>
 				</li>
-				<li class="categories-li">
+				<li class="categories-item">
 					<a href="blank.html">Моноподы для селфи</a>
 				</li>
-				<li class="categories-li">
+				<li class="categories-item">
 					<a href="blank.html">Экшн-камеры</a>
 				</li>
-				<li class="categories-li">
+				<li class="categories-item">
 					<a href="blank.html">Фитнес-браслеты</a>
 				</li>
-				<li class="categories-li">
+				<li class="categories-item">
 					<a href="blank.html">Умные часы</a>
 				</li>
-				<li class="categories-li">
+				<li class="categories-item">
 					<a href="blank.html">Квадрокоптеры</a>
 				</li>
 			</ul>
 			<section class="information">
 				<h2>Информация</h2>
 				<ul class="information-button">
-					<li><button type="button">Доставка</button></li>
-					<li><button type="button">Гарантия</button></li>
-					<li><button type="button">Кредит</button></li>
+					<li class="information-button information-button-active"><button type="button">Доставка</button></li>
+					<li class="information-button"><button type="button">Гарантия</button></li>
+					<li class="information-button"><button type="button">Кредит</button></li>
 				</ul>
 				<ul class="information-slider">
-					<li>
+					<li class="information-slide">
 						<h3>Доставка</h3>
 						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</li>
-					<li>
+					<li class="information-slide">
 						<h3>Гарантия</h3>
 						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
 					</li>
-					<li>
+					<li class="information-slide">
 						<h3>Кредит</h3>
 						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
 					</li>
@@ -156,7 +156,7 @@
 			</section>
 		</main>
 		<footer class="page-footer">
-			<a><img src="img/f_logo.svg" alt="Логотип" width="163" height="35"></a>
+			<a><img src="img/f_logo.svg" alt="Логотип" class="logo" width="163" height="35"></a>
 			<div class="footer-menu">
 				<ul>
 					<li><a href="blank.html" class="entry">Войти</a></li>
