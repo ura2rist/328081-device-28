@@ -43,6 +43,7 @@
 	--eight-color: #F6dada;
 	--main-font: "Open Sans", "Arial", sans-serif;
 	--second-font: "Gilroy", "Areal", sans-serif;
+	--main-rgba: rgba(255, 255, 255, 0.7);
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -117,7 +118,7 @@ body{
 
 .search-button{
 	width: 16px;
-    background-image: url(../img/zoom.svg);
+    background-image: url('../img/zoom.svg');
     height: 16px;
     border: none;
     background-repeat: no-repeat;
@@ -260,7 +261,7 @@ body{
 	font-style: normal;
 	font-weight: 300;
 	line-height: 20px;
-	color: rgba(255, 255, 255, 0.7);
+	color: var(--main-rgba);
 	text-decoration: none;
 }
 
@@ -443,7 +444,7 @@ body{
 .slider-toggle{
 	width: 15px;
 	height: 15px;
-	background-image: url(../img/slider-button-empty.svg);
+	background-image: url('../img/slider-button-empty.svg');
 	background-repeat: no-repeat;
 	background-position: -2px 1px;
 	border: none; 
@@ -452,7 +453,7 @@ body{
 }
 
 .slider-toggle-active{
-	background-image: url(../img/slider-button.svg);
+	background-image: url('../img/slider-button.svg');
 	background-position: center;
 }
 
@@ -480,27 +481,27 @@ body{
 }
 
 .categories-item:nth-child(1) a:before{
-	background-image: url(../img/popular-1.svg);
+	background-image: url('../img/popular-1.svg');
 }
 
 .categories-item:nth-child(2) a:before{
-	background-image: url(../img/popular-2.svg);
+	background-image: url('../img/popular-2.svg');
 }
 
 .categories-item:nth-child(3) a:before{
-	background-image: url(../img/group.svg);
+	background-image: url('../img/group.svg');
 }
 
 .categories-item:nth-child(4) a:before{
-	background-image: url(../img/group1.svg);
+	background-image: url('../img/group1.svg');
 }
 
 .categories-item:nth-child(5) a:before{
-	background-image: url(../img/group2.svg);
+	background-image: url('../img/group2.svg');
 }
 
 .categories-item:nth-child(6) a:before{
-	background-image: url(../img/popular-6.svg);
+	background-image: url('../img/popular-6.svg');
 }
 
 .information{
@@ -511,7 +512,7 @@ body{
 	list-style: none;
 }
 
-.information-button:after{
+.information-buttons:after{
 	background-color: var(--first-color);
 	display: block;
 	content: '';
@@ -519,7 +520,7 @@ body{
 	height: 320px;
 }
 
-.information-button button{
+.information-buttons button{
 	background-color: var(--four-color);
     border: none;
     font-family: var(--second-font);
@@ -559,15 +560,15 @@ body{
 }
 
 .information-slide:nth-child(1):after{
-	background-image: url(../img/delivery_2.svg);
+	background-image: url('../img/delivery_2.svg');
 }
 
 .information-slide:nth-child(2):after{
-	background-image: url(../img/warranty_1.svg);
+	background-image: url('../img/warranty_1.svg');
 }
 
 .information-slide:nth-child(3):after{
-	background-image: url(../img/credit_1.svg);
+	background-image: url('../img/credit_1.svg');
 }
 
 .sponsor ul{
@@ -575,7 +576,7 @@ body{
 }
 
 .modal-close{
-	background-image: url(../img/button_close.svg);
+	background-image: url('../img/button_close.svg');
 	border: none;
 	width: 55px;
 	height: 55px;
@@ -634,7 +635,7 @@ body{
 	display: block;
 	width: 12px;
 	height: 12px;
-	background-image: url(../img/icon_arrow_nav.svg);
+	background-image: url('../img/icon_arrow_nav.svg');
 }
 
 .range-filter{
@@ -711,7 +712,7 @@ body{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background-image: url(../img/checkbox-on.svg);
+	background-image: url('../img/checkbox-on.svg');
 }
 
 .custom-checkbox:checked+label:before{
@@ -719,7 +720,7 @@ body{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background-image: url(../img/checkbox-on-t.svg);
+	background-image: url('../img/checkbox-on-t.svg');
 }
 
 .custom-radio{
@@ -731,7 +732,7 @@ body{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background-image: url(../img/radio-on.svg);
+	background-image: url('../img/radio-on.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -742,7 +743,7 @@ body{
 	display: inline-block;
 	width: 24px;
 	height: 24px;
-	background-image: url(../img/radio-on-t.svg);
+	background-image: url('../img/radio-on-t.svg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -783,7 +784,7 @@ body{
 	display: block;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-image: url(../img/icon-down-dir.svg);
+	background-image: url('../img/icon-down-dir.svg');
 	background-position: center;
 	opacity: 0.3;
 }
