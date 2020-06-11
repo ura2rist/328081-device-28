@@ -82,6 +82,7 @@ body{
 }
 
 .header-navigate{
+	padding-bottom: 18px;
 	background-color: var(--basic-color);
 	max-width: 1040px;
 	margin: 40px auto 0;
@@ -97,11 +98,22 @@ body{
 
 .header-button{
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .account-menu{
 	margin: 0;
 	padding: 0;
+	flex-basis: 223px;
+	display: flex;
+}
+
+.search-form{
+	margin-right: 444px;
+}
+
+.compare{
+	margin-right: 40px;
 }
 
 .logo-header{
@@ -119,10 +131,10 @@ body{
 }
 
 .header-navigate .main-menu{
-	justify-content: space-between;
 	display: flex;
 	padding: 0;
-    width: 1060px;
+    width: 1040px;
+    margin-top: 50px;
 	font-family: var(--second-font);
 	font-style: normal;
 	font-weight: 700;
@@ -132,12 +144,38 @@ body{
 
 .catalog-menu{
 	font-style: normal;
-	font-weight: 300;
+    font-weight: 300;
+    padding-top: 12px;
+    position: absolute;
+    display: none;
+    background-color: var(--basic-color);
+    padding-left: 58px;
+    justify-content: space-between;
+    left: -60px;
+    width: 1102px;
+    padding-bottom: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 15px;
+    height: 95px;
+    text-transform: none;
+}
+
+.main-menu-catalog:hover .catalog-menu{
+	display: flex;
 }
 
 .main-menu-catalog{
-	flex-basis: 500px;
 	position: relative;
+	margin-right: 465px;
+}
+
+.main-menu-delivery{
+	margin-right: 38px;
+}
+
+.main-menu-guarantee{
+	margin-right: 97px;
 }
 
 .main-menu-catalog .main-menu-link:after{
@@ -262,7 +300,8 @@ body{
 
 .page-footer{
 	background-color: var(--footer-color);
-    padding-top: 64px;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 
 .page-footer ul{
@@ -916,16 +955,21 @@ footer .logo{
 
 .footer-info-menu{
 	flex-basis: 32%;
+	margin-right: 271px;
+}
+
+.footer-menu a:last-child{
+	padding-right: 0;
 }
 
 .wrap-footer .phone{
-	flex-basis: 35%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
 .social{
+	margin-top: 60px;
 	flex-basis: 54%;
 	justify-content: flex-end;
 	position: relative;
@@ -933,4 +977,19 @@ footer .logo{
 
 .social li{
 	padding-left: 20px;
+}
+
+.wrap-footer-info{
+	display: flex;
+    flex-basis: 100%;
+}
+
+.wrap-footer-social{
+	display: flex;
+    flex-basis: 100%;
+}
+
+.logo-acad-footer{
+	margin-top: 60px;
+	margin-left: 506px;
 }
