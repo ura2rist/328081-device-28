@@ -85,28 +85,28 @@ body{
 	background-color: var(--basic-color);
 	max-width: 1040px;
 	margin: 40px auto 0;
-	position: relative;
 	padding-top: 44px;
 	padding-left: 60px;
 	padding-right: 60px;
+}
+
+.header-navigate .logo{
+	margin-top: -65px;
+    display: block;
+}
+
+.header-button{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
 .account-menu{
 	margin: 0;
-	flex-basis: 223px;
+	padding: 0;
 }
 
 .logo-header{
 	max-width: 163px;
 	max-height: 35px;
-}
-
-.header-navigate .logo{
-	position: absolute;
-    top: -21px
 }
 
 .page-header a{
