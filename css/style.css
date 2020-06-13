@@ -111,7 +111,7 @@ body{
 }
 
 .search-form{
-	margin-right: 377px;
+	margin-right: 368px;
 	position: relative;
 }
 
@@ -123,7 +123,7 @@ body{
 }
 
 .compare{
-	margin-right: 40px;
+	margin-right: 35px;
 }
 
 .logo-header{
@@ -162,6 +162,10 @@ body{
 	position: absolute;
 }
 
+.main-menu-catalog .main-menu-link{
+	padding-right: 40px;
+}
+
 .catalog-menu{
 	font-style: normal;
     font-weight: 300;
@@ -188,7 +192,13 @@ body{
 
 .main-menu-catalog{
 	position: relative;
-	margin-right: 456px;
+	margin-right: 407px;
+}
+
+.wrap-footer-logo{
+	width: 163px;
+	display: block;
+	margin-bottom: 40px;
 }
 
 .main-menu-delivery{
@@ -196,7 +206,7 @@ body{
 }
 
 .main-menu-guarantee{
-	margin-right: 106px;
+	margin-right: 115px;
 }
 
 .main-menu-catalog .main-menu-link:after{
@@ -239,9 +249,7 @@ body{
 	height: 14px;
 	background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    top: 2px;
-    left: -8px;
+    padding-right: 8px;
 }
 
 .page-header .user:before{
@@ -258,9 +266,7 @@ body{
 	height: 14px;
 	background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    top: 2px;
-    left: -8px;
+    padding-right: 8px;
 }
 
 .page-header .cart:before{
@@ -269,9 +275,7 @@ body{
 	height: 10px;
 	background-repeat: no-repeat;
     background-position: center;	
-    position: relative;
-    top: -1px;
-    left: -8px;
+    padding-right: 14px;
 }
 
 .catalog:after{
