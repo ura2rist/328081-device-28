@@ -128,6 +128,7 @@ body{
 
 .compare{
 	margin-right: 61px;
+	position: relative;
 }
 
 .logo-header{
@@ -301,6 +302,10 @@ body{
     background-position: center;	
 }
 
+.contacts{
+	position: relative;
+}
+
 .about h2,
 .contacts h2{
 	font-family: var(--second-font);
@@ -327,6 +332,8 @@ body{
 	height: 7px;
 	background-color: black;
 	display: block;
+	position: relative;
+	top: -60px;
 }
 
 .about p,
@@ -334,28 +341,52 @@ body{
 	font-style: normal;
 	font-weight: 300;
 	line-height: 28px;
+	margin: 50px 0 0 0;
 }
 
-.about ul{
+.about-list{
 	list-style: none;
 	font-family: var(--second-font);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
+	margin: 50px 0 0 0;
+	padding: 0;
+	line-height: 28px;
 }
 
-.about ul li:before{
+.footer-menu .enter{
+	position: relative;
+}
+
+.about-list li{
+	margin-top: 20px;
+}
+
+.contacts-link,
+.about-link{
+	margin: 85px 0 0 0;
+	display: block;
+	line-height: 22px;
+	letter-spacing: 0.2em;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.about-list li:before{
 	content: url(../img/ellipse.svg);
 	width: 8px;
 	height: 8px;
 	background-repeat: no-repeat;
     background-position: center;
+    padding-right: 20px;
 }
 
 .page-footer{
 	background-color: var(--footer-color);
     padding-top: 65px;
     padding-bottom: 65px;
+    margin-top: 86px;
 }
 
 .page-footer ul{
@@ -366,37 +397,49 @@ body{
 
 .wrap-about{
 	max-width: 1160px;
-    margin: 0 auto;
+    margin: 140px auto 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 127px;
+}
+
+
+.map-link{
+	margin: 60px 0 0 0;
+    display: block;
 }
 
 .about{
 	grid-column-start: 1;
+	position: relative;
 }
 
 .page-footer .entry:before{
 	content: url(../img/icon_user_f.svg);
 	width: 13px;
 	height: 14px;
-	background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    left: -6px;
 }
 
 .page-footer .compare:before{
 	content: url(../img/icon_chart_f.svg);
 	width: 14px;
 	height: 14px;
-	background-repeat: no-repeat;
-    background-position: center;
+    position: relative;
+    left: -6px;
+}
+
+.cart{
+	position: relative;
 }
 
 .page-footer .cart:before{
 	content: url(../img/icon_cart_f.svg);
 	width: 10px;
 	height: 10px;
-	background-repeat: no-repeat;
-    background-position: center;	
+	position: relative;
+    left: -6px;	
 }
 
 .footer-menu a{
@@ -1024,7 +1067,6 @@ footer .logo{
 
 .footer-menu li,
 .footer-menu a{
-	margin: 0;
 	padding-left: 25px;
 	padding-right: 25px;
 }
@@ -1039,7 +1081,7 @@ footer .logo{
 
 .footer-info-menu{
 	flex-basis: 32%;
-	margin-right: 271px;
+	margin-right: 268px;
 }
 
 .footer-menu a:last-child{
