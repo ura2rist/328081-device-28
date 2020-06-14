@@ -82,7 +82,7 @@ body{
 }
 
 .header-navigate{
-	padding-bottom: 164px;
+	padding-bottom: 15Spx;
 	background-color: var(--basic-color);
 	max-width: 1040px;
 	margin: 40px auto 0;
@@ -99,18 +99,18 @@ body{
 .header-line{
 	display: flex;
 	flex-wrap: wrap;
-	margin-top: 44px;
+	margin-top: 22px;
 }
 
 .account-menu{
 	margin: 0;
 	padding: 0;
-	flex-basis: 223px;
+	flex-basis: 284px;
 	display: flex;
 }
 
 .search-form{
-	margin-right: 361px;
+	margin-right: 271px;
 	position: relative;
 }
 
@@ -127,8 +127,8 @@ body{
 }
 
 .compare{
-	margin-right: 40px;
-	position: relative;
+	margin-right: 36px;
+	padding-left: 30px;
 }
 
 .logo-header{
@@ -150,13 +150,15 @@ body{
 	flex-wrap: wrap;
 	padding: 0;
     width: 1040px;
-    margin-top: 50px;
+    margin-top: 47px;
     margin-bottom: 0;
 	font-family: var(--second-font);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
 	text-transform: uppercase;
+	line-height: 22px;
+	letter-spacing: 0.1em;
 }
 
 .main-menu-catalog .main-menu-link{
@@ -189,7 +191,7 @@ body{
 
 .main-menu-catalog{
 	position: relative;
-	margin-right: 407px;
+	margin-right: 310px;
 }
 
 .header-navigate .logo{
@@ -197,11 +199,11 @@ body{
 }
 
 .main-menu-delivery{
-	margin-right: 38px;
+	margin-right: 47px;
 }
 
 .main-menu-guarantee{
-	margin-right: 115px;
+	margin-right: 133px;
 }
 
 .catalog-menu li{
@@ -217,11 +219,11 @@ body{
     height: 16px;
     top: 3px;
     position: absolute;
-    left: 185px;
+    left: 210px;
 }
 
 .search-form-text{
-	padding-left: 28px;
+	padding-left: 40px;
 }
 
 
@@ -255,11 +257,11 @@ body{
     display: block;
     position: absolute;
     top: 0px;
-    left: 0;
+    left: 5px;
 }
 
 .page-header .entry{
-	padding-left: 20px;
+	padding-left: 30px;
 }
 
 .account-menu li{
@@ -278,8 +280,8 @@ body{
 	height: 20px;
     display: block;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 2px;
+    left: 2px;
 }
 
 .page-header .cart::before{
@@ -288,8 +290,8 @@ body{
 	height: 20px;
     display: block;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: -1px;
+    left: 7px;
 }
 
 .catalog::after{
@@ -382,7 +384,7 @@ body{
 
 .page-footer{
 	background-color: var(--footer-color);
-    padding-top: 65px;
+    padding-top: 47px;
     padding-bottom: 65px;
 }
 
@@ -433,7 +435,7 @@ body{
 }
 
 .cart{
-	position: relative;
+	padding-left: 30px;
 }
 
 .page-footer .cart::before{
@@ -1057,6 +1059,7 @@ footer .logo{
 .wrap-footer .logo{
 	display: block;
 	margin-bottom: 40px;
+	width: 163px;
 }
 
 .footer-menu{
