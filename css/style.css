@@ -110,7 +110,7 @@ body{
 }
 
 .search-form{
-	margin-right: 274px;
+	margin-right: 271px;
 	position: relative;
 }
 
@@ -309,12 +309,25 @@ body{
 	position: relative;
 }
 
+.contacts h2{
+	margin-bottom: 40px;
+}
+
+.contacts p{
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 28px;
+	margin-bottom: 38px;
+}
+
 .about h2,
 .contacts h2{
 	font-family: var(--second-font);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 47px;
+	line-height: 58px;
+	letter-spacing: 0.2em;
 }
 
 .about a,
@@ -336,15 +349,18 @@ body{
 	background-color: var(--first-color);
 	display: block;
 	position: relative;
-	top: -60px;
+	top: -52px;
 }
 
-.about p,
-.contacts p{
-	font-style: normal;
-	font-weight: 300;
-	line-height: 28px;
-	margin: 50px 0 0 0;
+.about p{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.about h2{
+	margin-bottom: 40px;
 }
 
 .about-list{
@@ -353,7 +369,7 @@ body{
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
-	margin: 50px 0 0 0;
+	margin: 59px 0 78px 3px;
 	padding: 0;
 	line-height: 28px;
 }
@@ -363,17 +379,29 @@ body{
 }
 
 .about-list li{
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .contacts-link,
 .about-link{
-	margin: 85px 0 0 0;
 	display: block;
 	line-height: 22px;
 	letter-spacing: 0.2em;
 	padding-left: 24px;
 	padding-right: 24px;
+}
+
+.about-link{
+	display: block;
+    box-sizing: border-box;
+    width: 267px;
+}
+
+.contacts-link{
+	display: block;
+    box-sizing: border-box;
+    width: 260px;
+    padding-left: 39px;
 }
 
 .about-list li::before{
@@ -399,17 +427,18 @@ body{
 
 .wrap-about{
 	max-width: 1160px;
-    margin: 140px auto 0;
+	padding-top: 22px;
+    margin: 75px auto 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 127px;
-	padding-bottom: 86px;
+	grid-gap: 125px;
+	padding-bottom: 85px;
 }
 
 
 .map-link{
-	margin: 60px 0 0 0;
     display: block;
+    margin-bottom: 80px;
 }
 
 .about{
@@ -768,6 +797,7 @@ footer .logo{
 }
 
 .information{
+	margin-bottom: 80px;
 	background-color: var(--four-color);
 }
 
@@ -835,7 +865,29 @@ footer .logo{
 }
 
 .sponsor ul{
-	list-style: none;
+	grid-gap: 36px;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    width: 1154px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sponsor ul li:nth-child(1){
+	grid-column: 1;
+}
+
+.sponsor ul li:nth-child(2){
+	grid-column: 2;
+}
+
+.sponsor ul li:nth-child(3){
+	grid-column: 3;
+}
+
+.sponsor ul li:nth-child(4){
+	grid-column: 4;
 }
 
 .modal-close{
