@@ -12,7 +12,7 @@
 			<nav class="header-navigate">
 				<a class="logo"><img src="img/logo.svg" alt="Логотип" class="logo-header" width="163" height="35px"></a>
 				<div class="header-line">
-					<form class="search-form">
+					<form class="search-form" method="GET" action="">
 						<label for="search-button"><span class="visually-hidden">Форма поиска</span></label>
 						<input type="search" name="search" id="search-button" class="search-form-text" placeholder="Поиск по сайту">
 						<button type="submit" class="search-form-button">Найти</button>
@@ -53,12 +53,18 @@
 							<p class="description-slide">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 							<a href="blank.html" class="slide-details">Подробнее</a>
 							<dl class="slide-char">
-								<dt>Длина палки</dt>
-								<dd>8,5 м</dd>
-								<dt>Вес палки</dt>
-								<dd>5 кг</dd>
-								<dt>Материал</dt>
-								<dd>Карбон</dd>
+								<div>
+									<dt>Длина палки</dt>
+									<dd>8,5 м</dd>
+								</div>
+								<div>
+									<dt>Вес палки</dt>
+									<dd>5 кг</dd>
+								</div>
+								<div>
+									<dt>Материал</dt>
+									<dd>Карбон</dd>
+								</div>
 							</dl>
 						</div>
 					</li>
@@ -69,8 +75,10 @@
 							<p class="description-slide">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 							<a href="blank.html" class="slide-details">Подробнее</a>
 							<dl class="slide-char">
-								<dt>Без подзарядки</dt>
-								<dd>48 часов</dd>
+								<div>
+									<dt>Без подзарядки</dt>
+									<dd>48 часов</dd>
+								</div>
 							</dl>
 						</div>
 					</li>
@@ -81,10 +89,14 @@
 							<p class="description-slide">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 							<a href="blank.html" class="slide-details">Подробнее</a>
 							<dl class="slide-char">
-								<dt>Дальность полета</dt>
-								<dd>800 м</dd>
-								<dt>Радиус поражения</dt>
-								<dd>50 м</dd>
+								<div>
+									<dt>Дальность полета</dt>
+									<dd>800 м</dd>
+								</div>
+								<div>
+									<dt>Радиус поражения</dt>
+									<dd>50 м</dd>
+								</div>
 							</dl>	
 						</div>
 					</li>
@@ -116,26 +128,28 @@
 				</li>
 			</ul>
 			<section class="information">
-				<h2>Информация</h2>
-				<ul class="information-buttons">
-					<li class="information-button information-button-active"><button type="button">Доставка</button></li>
-					<li class="information-button"><button type="button">Гарантия</button></li>
-					<li class="information-button"><button type="button">Кредит</button></li>
-				</ul>
-				<ul class="information-slider">
-					<li class="information-slide">
-						<h3>Доставка</h3>
-						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-					</li>
-					<li class="information-slide">
-						<h3>Гарантия</h3>
-						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
-					</li>
-					<li class="information-slide">
-						<h3>Кредит</h3>
-						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
-					</li>
-				</ul>
+				<h2 class="visually-hidden">Информация</h2>
+				<div class="information-wrap">
+					<ul class="information-buttons">
+						<li class="information-button information-button-active"><button type="button">Доставка</button></li>
+						<li class="information-button"><button type="button">Гарантия</button></li>
+						<li class="information-button"><button type="button">Кредит</button></li>
+					</ul>
+					<ul class="information-slider">
+						<li class="information-slide information-slide-active">
+							<h3>Доставка</h3>
+							<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+						</li>
+						<li class="information-slide">
+							<h3>Гарантия</h3>
+							<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+						</li>
+						<li class="information-slide">
+							<h3>Кредит</h3>
+							<p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.Товар, не дом, конечно же.</p>
+						</li>
+					</ul>
+				</div>
 			</section>
 			<section class="sponsor">
 				<h2 class="visually-hidden">Спонсоры</h2>

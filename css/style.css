@@ -178,6 +178,7 @@ body{
 }
 
 .catalog-menu{
+	z-index: 1;
 	font-style: normal;
     font-weight: 300;
     padding-top: 12px;
@@ -323,6 +324,8 @@ body{
 
 .contacts h2{
 	margin-bottom: 40px;
+	margin-top: 0;
+    padding-top: 62px;
 }
 
 .contacts p{
@@ -373,6 +376,8 @@ body{
 
 .about h2{
 	margin-bottom: 40px;
+	margin-top: 0;
+    padding-top: 62px;
 }
 
 .about-list{
@@ -439,7 +444,6 @@ body{
 
 .wrap-about{
 	max-width: 1160px;
-	padding-top: 22px;
     margin: 75px auto 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -454,7 +458,6 @@ body{
 }
 
 .about{
-	grid-column-start: 1;
 	position: relative;
 }
 
@@ -507,7 +510,8 @@ body{
 	width: 10px;
 	height: 10px;
 	position: absolute;
-    right: 71px;	
+    right: 71px;
+    top: 0;	
 }
 
 .footer-menu a{
@@ -536,7 +540,7 @@ body{
 	text-decoration: none;
 	display: flex;
     flex-wrap: wrap;
-    margin-right: 203px;
+    width: 631px;
     letter-spacing: 0.2em;
 }
 
@@ -726,8 +730,9 @@ footer .logo{
 	max-width: 1160px;
 	box-sizing: content-box;
 	padding-top: 14px;
-	margin: 0 auto;
-	background: linear-gradient(to bottom, var(--basic-color) 50%, var(--five-color) 50%);
+	margin: 0 auto 103px;
+	background: linear-gradient(to bottom, var(--basic-color) 28%, var(--five-color) 28%);
+	position: relative;
 }
 
 .slide-details{
@@ -735,6 +740,18 @@ footer .logo{
 	width: 220px;
     text-align: center;
     margin-left: 130px;
+}
+
+.slider-toggles{
+	display: flex;
+    position: absolute;
+    top: 350px;
+    right: 72px;
+    padding: 0;
+}
+
+.slider-toggles li{
+	margin-right: 15px;
 }
 
 .description-slide{
@@ -755,13 +772,57 @@ footer .logo{
 }
 
 .slide-content{
-	width: 650px;
+	width: 600px;
 	padding-top: 46px;
 }
 
 .slide{
-	display: flex;
+	display: none;
+	position: relative;
 	flex-wrap: wrap;
+}
+
+.slide:nth-child(1):before{
+	content: '01';
+	color: var(--five-color);
+	font-weight: 700;
+	font-size: 179px;
+	line-height: 219px;
+	text-transform: uppercase;
+	font-family: var(--second-font);
+	position: absolute;
+	top: -16px;
+    right: 46px;
+}
+
+.slide:nth-child(2):before{
+	content: '02';
+	color: var(--five-color);
+	font-weight: 700;
+	font-size: 179px;
+	line-height: 219px;
+	text-transform: uppercase;
+	font-family: var(--second-font);
+	position: absolute;
+	top: -16px;
+    right: 46px;
+}
+
+.slide:nth-child(3):before{
+	content: '03';
+	color: var(--five-color);
+	font-weight: 700;
+	font-size: 179px;
+	line-height: 219px;
+	text-transform: uppercase;
+	font-family: var(--second-font);
+	position: absolute;
+	top: -16px;
+    right: 46px;
+}
+
+.slide.slide-active{
+	display: flex;
 }
 
 .slide a{
@@ -775,12 +836,32 @@ footer .logo{
 	display: block;
 }
 
+.slide-char{
+	display: flex;
+    flex-wrap: wrap;
+    margin-left: 130px;
+    margin-top: 58px;
+    letter-spacing: 0.2em;
+}
+
+.slide-char div{
+	display: flex;
+    flex-direction: column-reverse;
+    margin-right: 64px;
+}
+
+.slide-char div:nth-child(3n){
+    margin-right: 0px;
+}
+
 .slide-char dt{
 	font-family: var(--second-font);
 	font-style: normal;
 	font-weight: 300;
 	font-size: 13px;
 	line-height: 15px;
+	letter-spacing: 0.1em;
+    margin-top: 16px;
 }
 
 .slide-char dd{
@@ -789,6 +870,7 @@ footer .logo{
 	font-weight: 300;
 	font-size: 36px;
 	line-height: 42px;
+	margin: 0;
 }
 
 .slider-toggle{
@@ -809,6 +891,13 @@ footer .logo{
 
 .categories{
 	list-style: none;
+	width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    padding: 0;
+    grid-gap: 38px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 33px;
 }
 
 .categories a{
@@ -818,9 +907,13 @@ footer .logo{
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 22px;
+	display: block;
+	margin-top: 36px;
 }
 
 .categories li a::before{
+	top: -36px;
+	position: relative;
 	content: '';
 	width: 160px;
 	height: 160px;
@@ -855,24 +948,65 @@ footer .logo{
 }
 
 .information{
-	margin-bottom: 80px;
-	background-color: var(--four-color);
+	margin-bottom: 87px;
+	padding-bottom: 107px;
+	background: linear-gradient(to bottom, var(--five-color) 34%, var(--four-color) 34%);
+}
+
+.information-wrap{
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
 }
 
 .information ul{
+	padding: 0;
 	list-style: none;
+	justify-content: flex-end;
 }
 
 .information-buttons::after{
 	background-color: var(--first-color);
 	display: block;
 	content: '';
+	position: absolute;
 	width: 7px;
 	height: 320px;
+	left: 277px;
+    top: 38px;
+}
+
+.information-buttons{
+	text-align: center;
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    margin-right: 251px;
+}
+
+.information-button{
+	margin: 0px 0 23px 14px;
+}
+
+.information-button-active{
+
+}
+
+.information-slide{
+	display: none;
+	position: relative;
+}
+
+.information-slide-active{
+	display: block;
 }
 
 .information-buttons button{
-	background-color: var(--four-color);
+	letter-spacing: 0.2em;
+	padding-bottom: 9px;
+    padding-top: 9px;
+    outline: none;
+	background-color: #e5e5e500;
     border: none;
     font-family: var(--second-font);
 	font-style: normal;
@@ -885,11 +1019,14 @@ footer .logo{
 
 .information-slider h3{
 	font-family: var(--second-font);
-	font-style: normal;
-	font-weight: 800;
-	font-size: 47px;
-	line-height: 58px;
-	color: var(--first-color);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    margin-top: 109px;
+    margin-bottom: 39px;
+    line-height: 58px;
+    letter-spacing: 0.2em;
+    color: var(--first-color);
 }
 
 .information-slider p{
@@ -898,16 +1035,22 @@ footer .logo{
 	font-size: 15px;
 	line-height: 28px;
 	color: var(--first-color);
+	letter-spacing: 0.1em;
+	display: block;
+	max-width: 500px;
 }
 
 .information-slide::after{
-	content: '';
-	width: 156px;
-	height: 188px;
-	display: block;
-	background-repeat: no-repeat;
-	background-size: 100%;
+    content: '';
+    width: 156px;
+    height: 188px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 88%;
+    position: absolute;
     background-position: center;
+    top: -13px;
+    right: -266px;
 }
 
 .information-slide:nth-child(1)::after{
@@ -1243,7 +1386,7 @@ footer .logo{
     margin-left: 24px;
 }
 
-.social li:nth-child(3n){
+.social li:last-child{
 	margin-right: 0;
 }
 
