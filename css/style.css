@@ -803,7 +803,7 @@ footer .logo{
 	max-width: 1160px;
 	box-sizing: content-box;
 	padding-top: 14px;
-	background: linear-gradient(to bottom, var(--basic-color) 28%, var(--five-color) 28%);
+	background-image: linear-gradient(to bottom, var(--basic-color) 28%, var(--five-color) 28%);
 	position: relative;
 }
 
@@ -948,7 +948,6 @@ footer .logo{
 	height: 15px;
 	background-image: url('../img/slider-button-empty.svg');
 	background-repeat: no-repeat;
-	background-position: -2px 1px;
 	border: none; 
 	background-color: white;
 	cursor: pointer;
@@ -975,8 +974,7 @@ footer .logo{
 	font-family: var(--second-font);
 	font-style: normal;
 	position: relative;
-	padding-top: 197px;
-	min-height: 40px
+	min-height: 200px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 22px;
@@ -1021,8 +1019,9 @@ footer .logo{
 
 .information{
 	margin-bottom: 87px;
-	padding-bottom: 107px;
-	background: linear-gradient(to bottom, var(--five-color) 34%, var(--four-color) 34%);
+	min-height: 380px;
+	margin-top: 105px;
+	background-image: linear-gradient(to bottom, var(--five-color) 24%, var(--four-color) 24%);
 }
 
 .information-wrap{
@@ -1045,7 +1044,7 @@ footer .logo{
 	width: 7px;
 	height: 320px;
 	left: 277px;
-    top: 38px;
+    top: -25px;
 }
 
 .information-buttons{
@@ -1058,10 +1057,6 @@ footer .logo{
 
 .information-button{
 	margin: 0px 0 23px 14px;
-}
-
-.information-button-active{
-
 }
 
 .information-slide{
@@ -1094,7 +1089,6 @@ footer .logo{
     font-style: normal;
     font-weight: 800;
     font-size: 47px;
-    margin-top: 109px;
     margin-bottom: 39px;
     line-height: 58px;
     letter-spacing: 0.2em;
