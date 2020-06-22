@@ -79,6 +79,7 @@ body{
 	line-height: 24px;
 	font-weight: 700;
 	min-width: 1160px;
+	background-color: var(--five-color);
 }
 
 .map,
@@ -220,7 +221,10 @@ body{
 }
 
 .catalog-menu li{
-	width: 20%;
+    font-weight: lighter;
+    letter-spacing: 0;
+    margin-bottom: 9px;
+    margin-right: 50px;
 }
 
 .main-menu-item:not(:first-child){
@@ -686,7 +690,7 @@ footer .logo{
     top: 50px;
 }
 
-.catalog-new-line{
+.catalog-menu li.catalog-new-line{
 	margin-bottom: 36px;
 }
 
@@ -948,6 +952,7 @@ footer .logo{
 	height: 15px;
 	background-image: url('../img/slider-button-empty.svg');
 	background-repeat: no-repeat;
+	background-position: 50%;
 	border: none; 
 	background-color: white;
 	cursor: pointer;
@@ -970,11 +975,12 @@ footer .logo{
 }
 
 .categories a{
+	padding-top: 160px;
 	color:var(--first-color);
 	font-family: var(--second-font);
 	font-style: normal;
 	position: relative;
-	min-height: 200px;
+	min-height: 45px;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 22px;
@@ -1070,18 +1076,21 @@ footer .logo{
 
 .information-buttons button{
 	letter-spacing: 0.2em;
-	padding-bottom: 9px;
+    padding-bottom: 9px;
     padding-top: 9px;
     outline: none;
-	background-color: #e5e5e500;
+    background-color: #e5e5e500;
     border: none;
     font-family: var(--second-font);
-	font-style: normal;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 22px;
-	text-transform: uppercase;
-	color: var(--first-color);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    display: block;
+    line-height: 22px;
+    margin: 0 auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--first-color);
 }
 
 .information-slider h3{
@@ -1117,6 +1126,10 @@ footer .logo{
     background-position: center;
     top: -13px;
     right: -266px;
+}
+
+.sponsor a{
+	display: block;
 }
 
 .information-slide:nth-child(1)::after{
