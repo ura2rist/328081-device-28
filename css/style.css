@@ -41,6 +41,14 @@
 	--six-color: #F0C52E;
 	--seven-color: #91C92F;
 	--eight-color: #F6dada;
+	--nine-color: #FFC600;
+	--ten-color: #e5e5e500;
+	--eleven-color: #F2F2F2;
+	--twelve-color: #f1f1f1;
+	--thirteen-color: #d7dcde;
+	--fourteen-color: #00ca74;
+	--fifteen-color: #ababab;
+	--sixteen-color: #cfcfcf;
 	--main-font: "Open Sans", "Arial", sans-serif;
 	--second-font: "Gilroy", "Arial", sans-serif;
 	--main-rgba: rgba(255, 255, 255, 0.7);
@@ -116,7 +124,7 @@ body{
 }
 
 .search-form{
-	margin-right: 240px;
+	margin-right: 95px;
 	position: relative;
 }
 
@@ -268,6 +276,8 @@ body{
 	border: none;
     background-color: var(--basic-color);
     outline: none;
+    font-size: 15px;
+    width: 350px;
 }
 
 .page-header .entry::before{
@@ -579,7 +589,7 @@ footer .logo{
 	width: 80px;
 	height: 7px;
 	display: block;
-	background-color: #FFC600;
+	background-color: var(--nine-color);
 	position: absolute;
     left: 0;
     top: 12px;
@@ -682,11 +692,11 @@ footer .logo{
 .search-form-text:focus + .search-form-button::before{
 	content: '';
 	height: 1px;
-	width: 200px;
+	width: 355px;
 	background-color: var(--first-color);
 	display: block;
 	position: absolute;
-    left: -202px;
+    left: -353px;
     top: 50px;
 }
 
@@ -954,7 +964,7 @@ footer .logo{
 	background-repeat: no-repeat;
 	background-position: 50%;
 	border: none; 
-	background-color: white;
+	background-color: var(--five-color);
 	cursor: pointer;
 }
 
@@ -975,7 +985,7 @@ footer .logo{
 }
 
 .categories a{
-	padding-top: 160px;
+    padding-top: 197px;
 	color:var(--first-color);
 	font-family: var(--second-font);
 	font-style: normal;
@@ -1026,7 +1036,7 @@ footer .logo{
 .information{
 	margin-bottom: 87px;
 	min-height: 380px;
-	margin-top: 105px;
+	margin-top: 59px;
 	background-image: linear-gradient(to bottom, var(--five-color) 24%, var(--four-color) 24%);
 }
 
@@ -1039,7 +1049,6 @@ footer .logo{
 .information ul{
 	padding: 0;
 	list-style: none;
-	justify-content: flex-end;
 }
 
 .information-buttons::after{
@@ -1050,7 +1059,7 @@ footer .logo{
 	width: 7px;
 	height: 320px;
 	left: 277px;
-    top: -25px;
+    top: -76px;
 }
 
 .information-buttons{
@@ -1059,6 +1068,7 @@ footer .logo{
 	display: flex;
     flex-direction: column;
     margin-right: 251px;
+    margin-top: 68px;
 }
 
 .information-button{
@@ -1079,7 +1089,7 @@ footer .logo{
     padding-bottom: 9px;
     padding-top: 9px;
     outline: none;
-    background-color: #e5e5e500;
+    background-color: var(--ten-color);
     border: none;
     font-family: var(--second-font);
     font-style: normal;
@@ -1196,7 +1206,7 @@ footer .logo{
 	line-height: 16px;
 	color: rgba(0, 0, 0, 0.4);
 	border: none;
-	background-color: #F2F2F2;
+	background-color: var(--eleven-color);
 }
 
 .modal-enter{
@@ -1249,7 +1259,7 @@ footer .logo{
 	position: relative;
 	height: 41px;
 	margin-bottom: 15px;
-	background-color: #f1f1f1;
+	background-color: var(--twelve-color);
 	border-radius: 5px;
 	padding-top: 39px;
 	padding-right: 22px;
@@ -1258,23 +1268,23 @@ footer .logo{
 
 .range-controls .scale{
 	height: 2px;
-	background-color: #d7dcde;
+	background-color: var(--thirteen-color);
 }
 
 .range-controls .bar{
 	width: 70%;
 	height: 2px;
-	background-color: #00ca74;
+	background-color: var(--fourteen-color);
 }
 
 .range-controls .toggle{
 	width: 4px;
 	height: 4px;
 	padding: 0;
-	border: 8px solid #ffffff;
-	background-color: #ababab;
+	border: 8px solid var(--five-color);
+	background-color: var(--fifteen-color);
 	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
+	box-shadow: 0 2px 1px 0 var(--sixteen-color);
 	position: absolute;
 	top: 31px;
 	left: 0;
