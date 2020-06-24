@@ -207,10 +207,6 @@ body{
     text-transform: none;
 }
 
-.slide-link-wrap{
-	position: relative;
-}
-
 .slide-details::before{
 	content: '';
 	width: 220px;
@@ -220,10 +216,31 @@ body{
 	position: absolute;
 	z-index: -1;
 	top: 7px;
+	transition: all 0.5s;
 }
 
-.slide-details:hover .slide-details::before{
+.information-button button::before{
+	content: '';
+	width: 220px;
+	height: 8px;
+	background-color: var(--six-color);
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 7px;
+	transition: all 0.5s;
+}
+
+.information-button button:hover::before{
 	height: 40px;
+	top: -7px;
+	transition: all 0.5s;
+}
+
+.slide-details:hover::before{
+	height: 40px;
+	top: -7px;
+	transition: all 0.5s;
 }
 
 .main-menu-catalog:hover .catalog-menu{
@@ -837,14 +854,15 @@ footer .logo{
 	box-sizing: content-box;
 	background-image: linear-gradient(to bottom, var(--basic-color) 28%, var(--five-color) 28%);
 	position: relative;
-	z-index: -2;
 }
 
 .slide-details{
 	letter-spacing: 0.2em;
 	width: 220px;
     text-align: center;
+    z-index: 1;
     margin-left: 130px;
+    position: relative;
 }
 
 .slider-toggles{
@@ -1120,6 +1138,7 @@ footer .logo{
     cursor: pointer;
     text-transform: uppercase;
     color: var(--first-color);
+    z-index: 1;
 }
 
 .information-slider h3{
