@@ -96,7 +96,7 @@ body{
 }
 
 .header-navigate{
-	padding-bottom: 15Spx;
+	padding-bottom: 15px;
 	background-color: var(--basic-color);
 	max-width: 1040px;
 	margin: 40px auto 0;
@@ -190,7 +190,7 @@ body{
 	z-index: 1;
 	font-style: normal;
     font-weight: 300;
-    padding-top: 12px;
+    padding-top: 45px;
     position: absolute;
     display: none;
     background-color: var(--basic-color);
@@ -199,12 +199,31 @@ body{
     align-content: flex-start;
     left: -60px;
     width: 1044px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 15px;
     height: 95px;
     text-transform: none;
+}
+
+.slide-link-wrap{
+	position: relative;
+}
+
+.slide-details::before{
+	content: '';
+	width: 220px;
+	height: 8px;
+	background-color: var(--six-color);
+	display: block;
+	position: absolute;
+	z-index: -1;
+	top: 7px;
+}
+
+.slide-details:hover .slide-details::before{
+	height: 40px;
 }
 
 .main-menu-catalog:hover .catalog-menu{
@@ -816,9 +835,9 @@ footer .logo{
 	margin: 0 auto 66px;
 	max-width: 1160px;
 	box-sizing: content-box;
-	padding-top: 14px;
 	background-image: linear-gradient(to bottom, var(--basic-color) 28%, var(--five-color) 28%);
 	position: relative;
+	z-index: -2;
 }
 
 .slide-details{
@@ -831,7 +850,7 @@ footer .logo{
 .slider-toggles{
 	display: flex;
     position: absolute;
-    top: 337px;
+    top: 322px;
 	right: 87px;
     padding: 0;
     list-style: none;
@@ -846,7 +865,7 @@ footer .logo{
 	font-size: 15px;
 	line-height: 20px;
 	width: 471px;
-	margin-bottom: 60px;
+	margin-bottom: 58px;
     margin-left: 128px;
 }
 
