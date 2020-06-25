@@ -52,6 +52,7 @@
 	--main-font: "Open Sans", "Arial", sans-serif;
 	--second-font: "Gilroy", "Arial", sans-serif;
 	--main-rgba: rgba(255, 255, 255, 0.7);
+	--second-rgba: rgba(0, 0, 0, 0.3);
 }
 
 .search-form-text::-webkit-search-decoration,
@@ -88,6 +89,71 @@ body{
 	font-weight: 700;
 	min-width: 1160px;
 	background-color: var(--five-color);
+}
+
+.search-form input:hover::placeholder{
+	color: var(--second-rgba);
+}
+
+.search-form input:focus::placeholder{
+	color: var(--first-color);
+}
+
+.account-menu a:hover{
+	opacity: .6;
+}
+
+.compare:hover,
+.cart:hover{
+	opacity: .6;
+}
+
+.compare:focus,
+.cart:focus{
+	opacity: .6;
+}
+
+.main-menu-link:hover{
+	opacity: .6;
+}
+
+.main-menu-link:active{
+	opacity: .3;
+}
+
+.account-menu a:focus{
+	color: var(--second-rgba);
+}
+
+.catalog-menu a:hover{
+	opacity: .6;
+}
+
+.catalog-menu a:active{
+	opacity: .3;
+}
+
+.categories-item:hover a::before{
+	background-color: var(--six-color);
+}
+
+.categories-item:active{
+	opacity: .3;
+}
+
+.categories-item:active a::before{
+	background-color: var(--six-color);
+	opacity: .6;
+}
+
+.search-form-button:hover{
+	color: var(--five-color);
+	background-color: var(--first-color);
+}
+
+.search-form-button:active{
+	color: var(--second-rgba);
+	background-color: var(--first-color);
 }
 
 .map,
@@ -219,27 +285,61 @@ body{
 	transition: all 0.5s;
 }
 
+.slide-details:active{
+	opacity: 0.3;
+}
+
 .information-button button::before{
 	content: '';
-	width: 220px;
-	height: 8px;
-	background-color: var(--six-color);
-	display: block;
-	position: absolute;
-	z-index: -1;
-	top: 7px;
-	transition: all 0.5s;
+    width: 220px;
+    height: 8px;
+    background-color: var(--six-color);
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: 16px;
+    left: -47px;
+    transition: all 0.5s;
+}
+
+.information-button.information-button-active button{
+	color: var(--basic-color);
+}
+
+.information-button.information-button-active button::before{
+	background-color: var(--first-color);
+	height: 40px;
+    top: -1px;
+    width: 315px;
+}
+
+
+.sponsor img{
+	filter: grayscale(90%);
+}
+
+
+.sponsor img:hover{
+	filter: grayscale(0%);
+}
+
+.information-button.information-button-active button:hover::before{
+	background-color: var(--first-color);
+}
+
+.information-button:nth-child(3) button::before{
+    left: -63px;
 }
 
 .information-button button:hover::before{
 	height: 40px;
-	top: -7px;
+	top: -1px;
 	transition: all 0.5s;
 }
 
 .slide-details:hover::before{
 	height: 40px;
-	top: -7px;
+	top: -8px;
 	transition: all 0.5s;
 }
 
@@ -1139,6 +1239,7 @@ footer .logo{
     text-transform: uppercase;
     color: var(--first-color);
     z-index: 1;
+    position: relative;
 }
 
 .information-slider h3{
