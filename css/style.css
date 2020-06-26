@@ -108,8 +108,7 @@ body{
 .main-menu-link:focus,
 .catalog-menu a:hover,
 .categories-item:active a::after,
-.categories-item:active a,
-.logo:hover,
+.logo[href]:hover,
 .footer-menu a:hover,
 .footer-menu .compare:hover,
 .footer-menu .cart:hover,
@@ -125,9 +124,9 @@ body{
 .compare:active,
 .cart:active,
 .catalog-menu a:active,
-.categories-item:active,
+.categories-item:active a::after,
 .account-menu a:active,
-.logo:active,
+.logo[href]:active,
 .footer-menu a:active,
 .footer-menu .compare:active,
 .footer-menu .cart:active,
@@ -300,7 +299,7 @@ body{
     position: absolute;
     z-index: -1;
     top: 16px;
-    left: -6px;
+    left: -3px;
     transition: all 0.5s;
 }
 
@@ -315,7 +314,7 @@ body{
 
 .sponsor img{
 	filter: grayscale(100%);
-	opacity: 0.6;
+	opacity: 0.5;
 }
 
 
@@ -330,7 +329,7 @@ body{
 }
 
 .information-button:nth-child(3) button::before{
-    left: -19px;
+    left: -3px;
 }
 
 .information-button button:hover::before,
@@ -348,7 +347,7 @@ body{
 }
 
 .main-menu-catalog:hover .catalog-menu,
-.main-menu-catalog:focus .catalog-menu{
+.main-menu-catalog .main-menu-link:focus + .catalog-menu{
 	display: flex;
 }
 
@@ -882,7 +881,8 @@ footer .logo{
 }
 
 
-.search-form-text:focus + .search-form-button{
+.search-form-text:focus + .search-form-button,
+.search-form-button:focus{
 	visibility: visible;
 	cursor: pointer;
 	top: -13px;
@@ -1339,8 +1339,8 @@ footer .logo{
     outline: none;
     background-color: var(--ten-color);
     border: none;
-    padding-left: 23px;
-    padding-right: 130px;
+    padding-right: 115px;
+    width: 278px;
     font-family: var(--second-font);
     font-style: normal;
     font-weight: 800;
