@@ -199,10 +199,10 @@ body{
 }
 
 .search-form-button{
-	border: 2px solid var(--first-color);
+	border: 2px solid transparent;
     background-color: var(--basic-color);
     outline: none;
-    visibility: hidden;
+    color: transparent;
     font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
@@ -303,12 +303,12 @@ body{
     transition: all 0.5s;
 }
 
-.information-button.information-button-active button{
+.information-button.information-button-active .information-push{
 	background-color: var(--first-color);
     color: var(--basic-color);
 }
 
-.information-button.information-button-active button:before{
+.information-button.information-button-active .information-push:before{
 	content: none;
 }
 
@@ -324,16 +324,16 @@ body{
 	opacity: 1;
 }
 
-.information-button.information-button-active button:hover::before{
+.information-button.information-button-active .information-push:hover::before{
 	background-color: var(--first-color);
 }
 
-.information-button:nth-child(3) button::before{
+.information-button:nth-child(3) .information-push::before{
     left: -3px;
 }
 
-.information-button button:hover::before,
-.information-button button:focus::before{
+.information-button .information-push:hover::before,
+.information-button .information-push:focus::before{
 	height: 40px;
 	top: -1px;
 	transition: all 0.5s;
@@ -883,13 +883,15 @@ footer .logo{
 
 .search-form-text:focus + .search-form-button,
 .search-form-button:focus{
-	visibility: visible;
+	border: 2px solid var(--first-color);
+	color: var(--first-color);
 	cursor: pointer;
 	top: -13px;
 	position: relative;
 }
 
-.search-form-text:focus + .search-form-button::before{
+.search-form-text:focus + .search-form-button::before,
+.search-form-button:focus::before{
 	content: '';
 	height: 2px;
 	width: 355px;
@@ -1315,8 +1317,8 @@ footer .logo{
 	position: relative;
 	display: flex;
     flex-direction: column;
-    margin-right: 251px;
-    margin-top: 68px;
+    margin-right: 123px;
+    margin-top: 73px;
 }
 
 .information-button{
@@ -1332,7 +1334,7 @@ footer .logo{
 	display: block;
 }
 
-.information-buttons button{
+.information-push{
 	letter-spacing: 0.2em;
     padding-bottom: 9px;
     padding-top: 9px;
