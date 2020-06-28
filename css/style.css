@@ -351,6 +351,10 @@ body{
 	display: flex;
 }
 
+.catalog-menu:focus-within{
+	display: flex;
+}
+
 .main-menu-catalog{
 	position: relative;
 	margin-right: 309px;
@@ -888,6 +892,10 @@ footer .logo{
 	cursor: pointer;
 	top: -13px;
 	position: relative;
+}
+
+.search-form-text:focus + .search-form-button:hover{
+	color: var(--five-color);
 }
 
 .search-form-text:focus + .search-form-button::before,
