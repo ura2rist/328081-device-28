@@ -1791,6 +1791,7 @@ footer .logo{
 
 .wrap-catalog{
 	width: 1160px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 33% 77%;
     margin: 0 auto;
 }
