@@ -236,7 +236,7 @@ body{
 	flex-wrap: wrap;
 	padding: 0;
     width: 1044px;
-    margin-top: 36px;
+    margin-top: 33px;
     margin-bottom: 0;
 	font-family: var(--second-font);
 	font-style: normal;
@@ -1499,10 +1499,13 @@ footer .logo{
 
 .breadcrumbs-list li:not(:last-child)::after{
 	content: '';
-	display: block;
-	width: 12px;
-	height: 12px;
-	background-image: url('../img/icon_arrow_nav.svg');
+    display: block;
+    width: 12px;
+    position: absolute;
+    height: 12px;
+    background-image: url(../img/icon_arrow_nav.svg);
+    top: 5px;
+    right: -27px;
 }
 
 .range-filter{
@@ -1750,4 +1753,44 @@ footer .logo{
 .wrap-footer-social{
 	display: flex;
 	position: relative;
+}
+
+.breadcrumbs{
+	max-width: 1160px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	background-image: linear-gradient(to bottom, var(--basic-color) 10%, var(--five-color) 10%);
+}
+
+.breadcrumbs-list{
+	padding: 0;
+	display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+.breadcrumbs-list li{
+	position: relative;
+	margin-right: 41px;
+}
+
+.breadcrumbs-list li:last-child{
+	margin-right: 0;
+}
+
+.breadcrumbs h1{
+	font-family: var(--second-font);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 58px;
+    margin-left: 61px;
+    padding-top: 59px;
+    margin-top: 0;
+}
+
+.wrap-catalog{
+	width: 1160px;
+    display: flex;
+    margin: 0 auto;
 }
