@@ -885,7 +885,6 @@ footer .logo{
 	line-height: 18px;
 }
 
-
 .search-form-text:focus + .search-form-button,
 .search-form-button:focus{
 	border: 2px solid var(--first-color);
@@ -1617,7 +1616,7 @@ footer .logo{
 	background-image: url('../img/radio-on-t.svg');
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 19px;
 }
 
 .price-controls input{
@@ -1626,16 +1625,29 @@ footer .logo{
 
 .sorting h2{
 	font-family: var(--second-font);
-	font-style: normal;
-	font-weight: 800;
-	font-size: 16px;
-	line-height: 20px;
-	text-transform: uppercase;
-	color: var(--first-color);	
+    font-style: normal;
+    margin: 25px 32px 25px 71px;
+    font-weight: 800;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--first-color);
 }
 
 .sorting ul{
 	list-style: none;
+	align-items: center;
+	display: flex;
+	margin-right: 225px;
+}
+
+.sorting li{
+	margin-right: 30px;
+}
+
+.sorting li:last-child{
+	margin-right: 0;
 }
 
 .sorting-param{
@@ -1791,8 +1803,7 @@ footer .logo{
 }
 
 .wrap-catalog{
-    display: grid;
-    grid-template-columns: 37% 63%;
+    display: flex;
     margin: 0 auto;
 }
 
@@ -1812,6 +1823,7 @@ footer .logo{
 	display: flex;
   	justify-content: flex-end;
   	background-color: var(--four-color);
+  	height: 100%;
 }
 
 .header-aside{
@@ -1824,8 +1836,67 @@ footer .logo{
 
 .sorting{
 	width: 830px;
+	display: flex;
 }
 
 .catalog{
 	width: 830px;
+}
+
+.column-filter{
+	flex-grow: 1;
+}
+
+.column-catalog-list{
+	flex-grow: 1;
+}
+
+.catalog-list{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.catalog-list li{
+	position: relative;
+}
+
+.button-catalog{
+	display: none;
+	position: absolute;
+    top: 0;
+    left: 0px;
+    background-color: var(--main-rgba);
+    width: 360px;
+    height: 380px;
+    box-sizing: border-box;
+    padding-top: 211px;
+}
+
+.catalog-list li:hover .button-catalog{
+	display: block;
+}
+
+.pagination{
+	display: flex;
+}
+
+.pagination ul{
+	display: flex;
+	margin: 0;
+}
+
+.wrap-catalog-bg{
+	margin-top: 45px;
+}
+
+.aside-title{
+	margin: 25px auto 25px 60px;
+	font-family: var(--second-font);
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: var(--first-color);
 }
