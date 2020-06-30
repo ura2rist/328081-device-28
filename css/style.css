@@ -49,6 +49,7 @@
 	--fourteen-color: #00ca74;
 	--fifteen-color: #ababab;
 	--sixteen-color: #cfcfcf;
+	--seventeen-color: #DCDCDC;
 	--main-font: "Open Sans", "Arial", sans-serif;
 	--second-font: "Gilroy", "Arial", sans-serif;
 	--main-rgba: rgba(255, 255, 255, 0.7);
@@ -1790,8 +1791,41 @@ footer .logo{
 }
 
 .wrap-catalog{
-	width: 1160px;
     display: grid;
-    grid-template-columns: 33% 77%;
+    grid-template-columns: 37% 63%;
     margin: 0 auto;
+}
+
+.aside-header{
+	background-color: var(--seventeen-color);
+	display: flex;
+  	justify-content: flex-end;
+}
+
+.sorting-wrap{
+	background-color: var(--four-color);
+	display: flex;
+  	justify-content: flex-start;
+}
+
+.aside-wrap{
+	display: flex;
+  	justify-content: flex-end;
+  	background-color: var(--four-color);
+}
+
+.header-aside{
+	width: 330px;
+}
+
+.option-search{
+	width: 330px;
+}
+
+.sorting{
+	width: 830px;
+}
+
+.catalog{
+	width: 830px;
 }
