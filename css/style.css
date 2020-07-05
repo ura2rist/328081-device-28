@@ -162,6 +162,22 @@ body{
 	display: none;
 }
 
+.view-form{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.wrap-modal{
+	background-color: var(--five-color);
+	margin: 0 auto;
+	width: 860px;
+	display: flex;
+}
+
 .header-navigate{
 	padding-bottom: 15px;
 	background-color: var(--basic-color);

@@ -176,7 +176,7 @@
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<a href="blank.html" class="map-link"><img src="img/map_1.png" alt="улица Строителей 15" width="560" height="222"></a>
-					<a href="blank.html" class="contacts-link" onclick="viewForm">Напишите нам</a>
+					<a href="blank.html" class="contacts-link" onclick="viewForm(event)">Напишите нам</a>
 				</section>
 			</div>
 		</main>
@@ -210,23 +210,25 @@
 			</div>
 		</footer>
 		<section class="modal-form" id="modal-form">
-			<h2>Форма обратной связи</h2>
-			<button class="modal-close" type="button"></button>
-			<form method="post" action="https://echo.htmlacademy.ru/">
-				<div>
-					<label for="form-name">Ваше имя</label>
-					<input type="text" id="form-name" name="" placeholder="Имя Фамилия">
-				</div>
-				<div>
-					<label for="mail">Ваше e-mail</label>
-					<input type="email" id="form-mail" name="" placeholder="email@example.com">
-				</div>
-				<div>
-					<label for="form-text">Текст письма</label>
-					<textarea id="form-text" placeholder="В свободной форме"></textarea>
-				</div>
-				<button type="submit" class="modal-enter">Отправить</button>
-			</form>
+			<div class="wrap-modal">
+				<h2 class="visually-hidden">Форма обратной связи</h2>
+				<button class="modal-close" type="button"></button>
+				<form method="post" action="https://echo.htmlacademy.ru/">
+					<div>
+						<label for="form-name">Ваше имя</label>
+						<input type="text" id="form-name" name="" placeholder="Имя Фамилия">
+					</div>
+					<div>
+						<label for="mail">Ваше e-mail</label>
+						<input type="email" id="form-mail" name="" placeholder="email@example.com">
+					</div>
+					<div>
+						<label for="form-text">Текст письма</label>
+						<textarea id="form-text" placeholder="В свободной форме"></textarea>
+					</div>
+					<button type="submit" class="modal-enter">Отправить</button>
+				</form>
+			</div>
 		</section>
 		<section class="map"><h2>Карта</h2><img src="https://via.placeholder.com/994x593"></section>
 		<script type="text/javascript" src="script/script.js"></script>

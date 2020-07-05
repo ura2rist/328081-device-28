@@ -1,4 +1,5 @@
 function viewForm(e){
 	e.preventDefault();
-	alert(1);
+	let modal = document.querySelector('#modal-form');
+	modal.classList.toggle('view-form');
 }
