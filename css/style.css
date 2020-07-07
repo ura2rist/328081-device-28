@@ -176,6 +176,7 @@ body{
 	margin: 0 auto;
 	width: 860px;
 	display: flex;
+	flex-direction: column;
 }
 
 .header-navigate{
@@ -293,7 +294,7 @@ body{
 .slide-details::before{
 	content: '';
 	width: 220px;
-	height: 8px;
+	height: calc(100% - 14px);
 	background-color: var(--six-color);
 	display: block;
 	position: absolute;
@@ -308,10 +309,24 @@ body{
 	color: var(--second-rgba);
 }
 
+.wrap-modal form{
+	display: flex;
+	width: 760px;
+}
+
+.wrap-modal label{
+	font-family: var(--second-font);
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 22px;
+	color: var(--first-color);
+}
+
 .information-button button::before{
 	content: '';
     width: 173px;
-    height: 8px;
+    height: calc(100% - 32px);;
     background-color: var(--six-color);
     display: block;
     position: absolute;
@@ -458,6 +473,11 @@ body{
 
 .account-menu li{
 	position: relative;
+	margin-right: 25px;
+}
+
+.account-menu li:last-child{
+	margin-right: 0;
 }
 
 .page-header .user::before{
@@ -535,9 +555,9 @@ body{
 }
 
 .about a::before{
-	    content: '';
+	content: '';
     width: 277px;
-    height: 8px;
+    height: calc(100% - 14px);
     background-color: var(--six-color);
     display: block;
     position: absolute;
@@ -557,7 +577,7 @@ body{
 .contacts-link::before{
 	content: '';
     width: 277px;
-    height: 8px;
+    height: calc(100% - 14px);
     background-color: var(--six-color);
     display: block;
     position: absolute;
@@ -907,6 +927,7 @@ footer .logo{
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 19px;
+	width: 400px;
 }
 
 .form-filter fieldset{
@@ -939,7 +960,7 @@ footer .logo{
 	line-height: 22px;
 	letter-spacing: 0.05em;
 	width: 265px;
-    margin-top: 22px;
+    margin-top: 23px;
 }
 
 .title-product p{
@@ -949,7 +970,7 @@ footer .logo{
 	font-size: 16px;
 	line-height: 18px;
 	margin-left: auto;
-    margin-top: 25px;
+    margin-top: 27px;
 }
 
 .button-catalog{
@@ -1520,8 +1541,11 @@ footer .logo{
 	background-image: url('../img/button_close.svg');
 	border: none;
 	width: 55px;
+	margin-left: auto;
 	height: 55px;
 	background-color: var(--five-color);
+	margin-top: 20px;
+	margin-right: 20px;
 }
 
 .modal-form label{
@@ -1531,6 +1555,17 @@ footer .logo{
 	font-size: 18px;
 	line-height: 22px;
 	color: var(--first-color);
+}
+
+.modal-form div{
+	display: flex;
+	flex-direction: column;
+	width: 960px;
+}
+
+.wrap-modal div:first-child,
+.wrap-modal div:nth-child(2){
+	width: 360px;
 }
 
 .modal-form input,
@@ -1731,8 +1766,8 @@ footer .logo{
 
 .button-view::before {
     content: '';
-    width: 195px;
-    height: 8px;
+    width: 200px;
+    height: calc(100% - 40px);
     background-color: var(--six-color);
     display: block;
     position: absolute;
@@ -2068,7 +2103,7 @@ fieldset{
 .button-add::before{
 	content: '';
     width: 195px;
-    height: 8px;
+    height: calc(100% - 41px);
     background-color: var(--six-color);
     display: block;
     position: absolute;

@@ -3,3 +3,9 @@ function viewForm(e){
 	let modal = document.querySelector('#modal-form');
 	modal.classList.toggle('view-form');
 }
+
+function closeForm(e){
+	e.preventDefault();
+	let modal = document.querySelector('#modal-form');
+	modal.classList.toggle('view-form');
+}
