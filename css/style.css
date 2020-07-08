@@ -118,7 +118,15 @@ body{
 .logo-acad-footer:hover,
 .footer-menu a:focus,
 .footer-info-menu a:focus,
-.logo-acad-footer:focus{
+.logo-acad-footer:focus,
+.custom-checkbox+label:focus::before,
+.custom-checkbox+label:hover::before,
+.custom-radio+label:hover::before,
+.custom-radio+label:focus::before,
+.custom-checkbox+label[disabled],
+.custom-radio+label[disabled],
+.sorting a:hover,
+.sorting a:focus{
 	opacity: 0.6;
 }
 
@@ -980,13 +988,21 @@ footer .logo{
 	line-height: 18px;
 }
 
-.search-form-text:focus + .search-form-button,
-.search-form-button:focus{
+.search-form-text:focus + .search-form-button{
 	border: 2px solid var(--first-color);
 	color: var(--first-color);
 	cursor: pointer;
 	top: -13px;
 	position: relative;
+}
+
+.search-form-button:focus{
+	border: 2px solid var(--first-color);
+	color: var(--five-color);
+	cursor: pointer;
+	top: -13px;
+	position: relative;
+	background-color: var(--first-color);
 }
 
 .search-form-text:focus + .search-form-button:hover{
@@ -2144,6 +2160,7 @@ fieldset{
     margin-left: 70px;
     margin-top: 23px;
     margin-bottom: 79px;
+    background-color: var(--eighteen-color);
 }
 
 .pagination ul{
