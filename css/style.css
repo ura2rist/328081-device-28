@@ -125,8 +125,9 @@ body{
 .custom-radio+label:focus::before,
 .custom-checkbox+label[disabled],
 .custom-radio+label[disabled],
-.sorting a:hover,
-.sorting a:focus{
+.sorting a[href]:hover,
+.sorting a:focus,
+.map-close{
 	opacity: 0.6;
 }
 
@@ -895,7 +896,7 @@ footer .logo{
 
 .filter-color ul{
 	padding-left: 0;
-    margin-top: 26px;
+    margin-top: 24px;
 }
 
 .filter-color li{
@@ -937,7 +938,9 @@ footer .logo{
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 19px;
-	width: 400px;
+	width: 330px;
+	box-sizing: border-box;
+    padding-left: 48px;
 }
 
 .form-filter fieldset{
@@ -1564,6 +1567,7 @@ footer .logo{
 	background-color: var(--five-color);
 	margin-top: 20px;
 	margin-right: 20px;
+	cursor: pointer;
 }
 
 .modal-form label{
@@ -1646,7 +1650,7 @@ footer .logo{
 }
 
 .range-filter{
-	width: 260px;
+	width: 230px;
 }
 
 .filter-item legend{
@@ -1720,11 +1724,6 @@ footer .logo{
 	list-style: none;
 }
 
-.custom-checkbox{
-	position: absolute;
-	opacity: 0;
-}
-
 .custom-checkbox+label::before{
 	content: '';
 	display: inline-block;
@@ -1740,11 +1739,6 @@ footer .logo{
 	width: 24px;
 	height: 24px;
 	background-image: url('../img/checkbox-on-t.svg');
-}
-
-.custom-radio{
-	opacity: 0;
-	position: absolute;
 }
 
 .custom-radio+label::before{
@@ -1771,8 +1765,9 @@ footer .logo{
 }
 
 .button-view{
-	padding-left: 60px;
-    padding-top: 26px;
+	padding-right: 62px;
+    padding-left: 0px;
+    padding-top: 23px;
 	letter-spacing: 0.2em;
     outline: none;
     background-color: var(--ten-color);
@@ -1795,13 +1790,13 @@ footer .logo{
 .button-view::before {
     content: '';
     width: 200px;
-    height: calc(100% - 40px);
+    height: calc(100% - 38px);
     background-color: var(--six-color);
     display: block;
     position: absolute;
     z-index: -1;
-    top: 33px;
-    left: 70px;
+    top: 29px;
+    left: 11px;
     transition: all 0.5s;
 }
 
@@ -1882,7 +1877,7 @@ footer .logo{
 	background-image: url('../img/icon-down-dir.svg');
 	background-position: center;
 	opacity: 0.3;
-	margin-top: 14px;
+	margin-top: 7px;
 }
 
 .sort-up{
@@ -1894,6 +1889,11 @@ footer .logo{
 	opacity: 1;
 }
 
+.custom-radio[disabled]+label,
+.custom-checkbox[disabled]+label{
+	opacity: 0.25;
+}
+
 .pagination a{
 	font-family: var(--second-font);
 	font-style: normal;
@@ -1903,6 +1903,7 @@ footer .logo{
 	text-transform: uppercase;
 	color: var(--first-color);	
 	opacity: 0.3;
+	letter-spacing: 0.1em;
 }
 
 .pagination .pagination-active{
@@ -1940,6 +1941,11 @@ footer .logo{
 
 .footer-menu li{
 	display: flex;
+	margin-right: 25px;
+}
+
+.footer-menu li:last-child{
+	margin-right: 0;
 }
 
 .wrap-footer-info .footer-addres{
@@ -1996,6 +2002,7 @@ footer .logo{
 	padding: 0;
 	display: flex;
     flex-wrap: wrap;
+    margin: 0;
 }
 
 .breadcrumbs-list li{
@@ -2046,15 +2053,16 @@ footer .logo{
 
 .sorting{
 	width: 830px;
-	align-items: center;
-	display: flex;
-	padding-bottom: 19px;
-    padding-top: 19px;
+    align-items: center;
+    display: flex;
+    padding-bottom: 23px;
+    padding-top: 22px;
     padding-left: 71px;
+    box-sizing: border-box;
 }
 
-fieldset{
-	padding-left: 130px;
+.option-search fieldset{
+
 }
 
 .catalog{
@@ -2120,7 +2128,6 @@ fieldset{
     display: block;
     line-height: 22px;
     margin: 0 auto;
-    cursor: pointer;
     text-transform: uppercase;
     color: var(--first-color);
     z-index: 1;
@@ -2157,7 +2164,6 @@ fieldset{
 	font-size: 13px;
 	line-height: 18px;
 	letter-spacing: 0.1em;
-	cursor: pointer;
 }
 
 .pagination{
@@ -2287,4 +2293,35 @@ fieldset{
 
 .map iframe{
 	margin: 0 auto;
+	box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+	position: relative;
+  	z-index: 2;
+  	border: none;
+}
+
+.map-wrap{
+	width: 994px;
+	height: 593px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.map-close{
+	z-index: 3;
+	width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    background-image: url(../img/button_close.svg);
+    right: 20px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.map-wrap p{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 }
