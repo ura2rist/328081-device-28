@@ -1,3 +1,5 @@
+let form = document.querySelector('#popup-form');
+
 document.getElementById('view-form').addEventListener('click', function(event){
 	formToggle(event);
 });
@@ -25,3 +27,16 @@ function formToggle(e){
 	let modal = document.querySelector('#modal-form');
 	modal.classList.toggle('view-form');
 }
+
+form.addEventListener('submit', function(event){
+	let name = document.querySelector('[name=name-user]'),
+		mail = document.querySelector('[name=mail-user]'),
+		text = document.querySelector('[name=form-text]');
+	if(!name.value || !mail.value){
+		event.preventDefault();
+		name.classList.add('error-form');
+		mail.classList.add('error-form');
+	}
+	name.classList.remove('error-form');
+	mail.classList.remove('error-form');
+});

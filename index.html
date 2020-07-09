@@ -213,7 +213,7 @@
 			<div class="wrap-modal">
 				<h2 class="visually-hidden">Форма обратной связи</h2>
 				<button class="modal-close" type="button" id="close-form"></button>
-				<form method="post" action="https://echo.htmlacademy.ru/">
+				<form method="post" id="popup-form" action="https://echo.htmlacademy.ru/">
 					<div>
 						<label for="form-name">Ваше имя</label>
 						<input type="text" id="form-name" name="name-user" placeholder="Имя Фамилия">
@@ -224,7 +224,7 @@
 					</div>
 					<div>
 						<label for="form-text">Текст письма</label>
-						<textarea id="form-text" placeholder="В свободной форме"></textarea>
+						<textarea id="form-text" name="form-text" placeholder="В свободной форме"></textarea>
 					</div>
 					<button type="submit" class="modal-enter">Отправить</button>
 				</form>
