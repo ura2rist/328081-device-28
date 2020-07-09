@@ -51,10 +51,12 @@
 	--sixteen-color: #cfcfcf;
 	--seventeen-color: #DCDCDC;
 	--eighteen-color: #EBEBEB;
+	--nineteen-color: #D9D9D9;
 	--main-font: "Open Sans", "Arial", sans-serif;
 	--second-font: "Gilroy", "Arial", sans-serif;
 	--main-rgba: rgba(255, 255, 255, 0.7);
 	--second-rgba: rgba(0, 0, 0, 0.3);
+	--three-rgba: rgba(0, 0, 0, 0.6);
 }
 
 .search-form-text::-webkit-search-decoration,
@@ -119,16 +121,21 @@ body{
 .footer-menu a:focus,
 .footer-info-menu a:focus,
 .logo-acad-footer:focus,
-.custom-checkbox+label:focus::before,
+.custom-checkbox:focus+label::before,
 .custom-checkbox+label:hover::before,
 .custom-radio+label:hover::before,
-.custom-radio+label:focus::before,
+.custom-radio:focus+label::before,
 .custom-checkbox+label[disabled],
 .custom-radio+label[disabled],
 .sorting a[href]:hover,
 .sorting a:focus,
-.map-close{
+.map-close,
+.breadcrumbs-list a:hover{
 	opacity: 0.6;
+}
+
+.breadcrumbs-list a:active{
+	opacity: 0.1;
 }
 
 .main-menu-link:active,
@@ -161,6 +168,8 @@ body{
 	background-color: var(--first-color);
 }
 
+
+
 .search-form-button:active{
 	color: var(--second-rgba);
 	background-color: var(--first-color);
@@ -169,6 +178,19 @@ body{
 .map,
 .modal-form{
 	display: none;
+}
+
+.button-add:active,
+.button-catalog .button-comparison{
+	color: var(--three-rgba);
+}
+
+.button-comparison:hover{
+	color: var(--first-color);
+}
+
+.button-comparison:active{
+	color: var(--second-rgba);
 }
 
 .view-form{
@@ -395,9 +417,9 @@ body{
 	display: flex;
 }
 
-.catalog-menu:focus-within{
+/*.catalog-menu:focus-within{
 	display: flex;
-}
+}*/
 
 .main-menu-catalog{
 	position: relative;
@@ -1559,15 +1581,20 @@ footer .logo{
 }
 
 .modal-close{
-	background-image: url('../img/button_close.svg');
+	background-color: var(--six-color);
+    background-image: url(../img/button_close.svg);
 	border: none;
 	width: 55px;
 	margin-left: auto;
 	height: 55px;
-	background-color: var(--five-color);
 	margin-top: 20px;
 	margin-right: 20px;
 	cursor: pointer;
+	background-size: 60%;
+    background-position: center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    opacity: 0.7;
 }
 
 .modal-form label{
@@ -1862,8 +1889,10 @@ footer .logo{
 	opacity: 0.3;
 }
 
-.sort-active{
-	opacity:  1;
+.sorting a[href]:active,
+.sort-active,
+.sorting-param:active{
+	opacity: 1;
 }
 
 .sort-up,
@@ -2167,10 +2196,6 @@ footer .logo{
 }
 
 .pagination{
-	padding-left: 31px;
-    padding-bottom: 20px;
-    padding-right: 37px;
-    padding-top: 24px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -2181,7 +2206,29 @@ footer .logo{
     background-color: var(--eighteen-color);
 }
 
+.next,
+.back{
+	padding: 23px 29px;
+}
+
+.next:hover,
+.back:hover{
+	background-color: var(--nineteen-color);
+}
+
+
+.next:active,
+.back:active{
+	background-color: var(--nineteen-color);
+	opacity: 0.3;
+}
+
+.map-wrap img{
+	display: block;
+}
+
 .pagination ul{
+	align-items: center;
 	display: flex;
     margin: 0;
     padding-left: 25px;
@@ -2235,6 +2282,12 @@ footer .logo{
 }
 
 .catalog-list li:focus .button-catalog{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.catalog-list li:focus-within .button-catalog{
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -2307,16 +2360,31 @@ footer .logo{
 }
 
 .map-close{
-	z-index: 3;
-	width: 55px;
+    z-index: 3;
+    width: 55px;
     height: 55px;
     border-radius: 50%;
     position: absolute;
     border: none;
+    background-color: var(--six-color);
     background-image: url(../img/button_close.svg);
     right: 20px;
     top: 40px;
     cursor: pointer;
+    background-size: 60%;
+    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.map-close:hover,
+.modal-close:hover{
+	opacity: 1;
+}
+
+.map-close:active,
+.modal-close:active{
+	opacity: 0.3;
 }
 
 .map-wrap p{
