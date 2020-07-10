@@ -10,7 +10,7 @@
 	<body class="page-body">
 		<header class="page-header">
 			<nav class="header-navigate">
-				<a class="logo"><img src="img/logo.svg" alt="Логотип" class="logo-header" width="163" height="35px"></a>
+				<a class="logo"><img src="img/logo.svg" alt="Логотип" class="logo-header" width="163" height="35"></a>
 				<div class="header-line">
 					<form class="search-form" method="GET" action="">
 						<label for="search-button"><span class="visually-hidden">Форма поиска</span></label>
@@ -197,7 +197,7 @@
 						<li><a href="blank.html">Гарантия</a></li>
 						<li><a href="blank.html">Контакты</a></li>
 					</ul>
-					<a href="tel: +74954959595" class="phone">Тел: +7 (495) 495-95-95</a>
+					<a href="tel:+74954959595" class="phone">Тел: +7 (495) 495-95-95</a>
 				</div>
 				<div class="wrap-footer-social">
 					<ul class="social">
@@ -216,15 +216,15 @@
 				<form method="post" id="popup-form" action="https://echo.htmlacademy.ru/">
 					<div>
 						<label for="form-name">Ваше имя</label>
-						<input type="text" id="form-name" name="name-user" placeholder="Имя Фамилия">
+						<input type="text" id="form-name" name="name-user" placeholder="Имя Фамилия" required>
 					</div>
 					<div>
 						<label for="mail">Ваше e-mail</label>
-						<input type="email" id="form-mail" name="mail-user" placeholder="email@example.com">
+						<input type="email" id="form-mail" name="mail-user" placeholder="email@example.com" required>
 					</div>
 					<div>
 						<label for="form-text">Текст письма</label>
-						<textarea id="form-text" name="form-text" placeholder="В свободной форме"></textarea>
+						<textarea id="form-text" name="form-text" placeholder="В свободной форме" required></textarea>
 					</div>
 					<button type="submit" class="modal-enter">Отправить</button>
 				</form>
@@ -234,10 +234,10 @@
 			<h2 class="visually-hidden">Карта</h2>
 			<div class="map-wrap">
 				<button class="map-close" type="button" id="map-close"></button>
-				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab52c7cdff85ee78c519f712e29b67371b51303b69a897749e8e4847236f646de&amp;source=constructor" width="994" height="593" frameborder="0"></iframe>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab52c7cdff85ee78c519f712e29b67371b51303b69a897749e8e4847236f646de&amp;source=constructor" width="994" height="593"></iframe>
 				<p><img src="img/map-big.png" alt="улица Строителей 15" width="994" height="593"></p>
 			</div>
 		</section>
-		<script type="text/javascript" src="script/script.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>

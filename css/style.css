@@ -30,6 +30,13 @@
 	font-weight: 300;
 }
 
+@keyframes bounce{
+	0% { transform: translateY(-2000px); }
+	70% { transform: translateY(30px); }
+	90% { transform: translateY(-10px); }
+	100% { transform: translateY(0); }
+}
+
 :root{
 	--basic-color: #F7E296;
 	--footer-color: #363636;
@@ -112,6 +119,7 @@ body{
 .main-menu-link:hover,
 .main-menu-link:focus,
 .catalog-menu a:hover,
+.catalog-menu a:focus,
 .categories-item:active a::after,
 .logo[href]:hover,
 .footer-menu a:hover,
@@ -137,6 +145,11 @@ body{
 
 .breadcrumbs-list a:active{
 	opacity: 0.1;
+}
+
+.custom-checkbox:active + label::before,
+.custom-radio:active + label::before{
+	opacity: 1;
 }
 
 .main-menu-link:active,
@@ -201,6 +214,8 @@ body{
     display: flex;
     align-items: center;
     z-index: 10;
+    animation-name: bounce;
+    animation-duration: 0.6s;
 }
 
 .wrap-modal{
@@ -414,13 +429,12 @@ body{
 }
 
 .main-menu-catalog:hover .catalog-menu,
-.main-menu-catalog .main-menu-link:focus + .catalog-menu{
+.main-menu-catalog .main-menu-link:focus + .catalog-menu,
+.main-menu-catalog:focus-within .catalog-menu{
 	display: flex;
 }
 
-/*.catalog-menu:focus-within{
-	display: flex;
-}*/
+
 
 .main-menu-catalog{
 	position: relative;
@@ -1651,6 +1665,12 @@ footer .logo{
 	background-color: var(--eight-color);
 }
 
+.wrap-modal .error-form:hover,
+.wrap-modal .error-form:focus{
+	background-color: var(--eight-color);
+	outline: none;
+}
+
 .modal-enter{
 	font-family: var(--second-font);
 	font-style: normal;
@@ -1770,6 +1790,7 @@ footer .logo{
 .custom-checkbox+label::before{
 	content: '';
 	display: inline-block;
+	vertical-align: middle;
 	width: 24px;
 	height: 24px;
 	margin-right: 19px;
@@ -1780,6 +1801,7 @@ footer .logo{
 	content: '';
 	display: inline-block;
 	width: 24px;
+	vertical-align: middle;
 	height: 24px;
 	background-image: url('../img/checkbox-on-t.svg');
 }
@@ -1787,6 +1809,7 @@ footer .logo{
 .custom-radio+label::before{
 	content: url('../img/radio-on.svg');
 	display: inline-block;
+	vertical-align: middle;
 	width: 24px;
 	height: 24px;
 	margin-right: 17px;
@@ -1853,6 +1876,7 @@ footer .logo{
 .custom-radio:checked+label:before{
 	content: url('../img/radio-on-t.svg');
 	display: inline-block;
+	vertical-align: middle;
 	width: 24px;
 	height: 24px;
 }
@@ -2310,7 +2334,8 @@ footer .logo{
 }
 
 .wrap-modal div:first-child input, 
-.wrap-modal div:nth-child(2) input{
+.wrap-modal div:nth-child(2) input,
+.wrap-modal textarea{
     width: 369px;
     box-sizing: border-box;
     padding: 17px 20px;
@@ -2358,6 +2383,8 @@ footer .logo{
     display: flex;
     align-items: center;
     z-index: 10;
+    animation-name: bounce;
+    animation-duration: 0.6s;
 }
 
 .map iframe{

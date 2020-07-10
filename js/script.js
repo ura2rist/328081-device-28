@@ -5,8 +5,15 @@ document.getElementById('view-form').addEventListener('click', function(event){
 });
 
 document.getElementById('close-form').addEventListener('click', function(event){
+	closeForm(event);
 	formToggle(event);
 });
+
+function closeForm(e){
+	e.preventDefault();
+	let modal = document.querySelector('.wrap-modal');
+	modal.classList.remove('.error-form');
+}
 
 document.getElementById('map').addEventListener('click', function(event){
 	mapToggle(event);
@@ -28,15 +35,15 @@ function formToggle(e){
 	modal.classList.toggle('view-form');
 }
 
-form.addEventListener('submit', function(event){
-	let name = document.querySelector('[name=name-user]'),
-		mail = document.querySelector('[name=mail-user]'),
-		text = document.querySelector('[name=form-text]');
-	if(!name.value || !mail.value){
-		event.preventDefault();
-		name.classList.add('error-form');
-		mail.classList.add('error-form');
+if (form){
+	form.addEventListener('invalid', checkForm, true)
+	function checkForm(evt) {
+		let target = evt.target;
+		// target.setCustomValidity(' ');
+		target.classList.add('error-form');
+		console.log('невалидно');
+		target.addEventListener("input", function(evt) {
+			target.classList.remove('error-form');
+		})
 	}
-	name.classList.remove('error-form');
-	mail.classList.remove('error-form');
-});
+}
