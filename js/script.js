@@ -11,8 +11,10 @@ document.getElementById('close-form').addEventListener('click', function(event){
 
 function closeForm(e){
 	e.preventDefault();
-	let modal = document.querySelector('.wrap-modal');
-	modal.classList.remove('.error-form');
+	let lists = document.querySelectorAll('.input-form');
+	for(list of lists){
+		list.classList.remove('error-form');
+	}
 }
 
 document.getElementById('map').addEventListener('click', function(event){

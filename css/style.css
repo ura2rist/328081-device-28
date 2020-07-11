@@ -318,10 +318,10 @@ body{
 }
 
 .catalog-menu{
-	z-index: 1;
-	font-style: normal;
+    z-index: 1;
+    font-style: normal;
     font-weight: 300;
-    padding-top: 45px;
+    padding-top: 34px;
     position: absolute;
     display: none;
     background-color: var(--basic-color);
@@ -330,7 +330,7 @@ body{
     align-content: flex-start;
     left: -60px;
     width: 1044px;
-    padding-bottom: 45px;
+    padding-bottom: 31px;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 15px;
@@ -1009,7 +1009,7 @@ footer .logo{
 	font-size: 18px;
 	line-height: 22px;
 	letter-spacing: 0.05em;
-	width: 265px;
+	width: 282px;
     margin-top: 23px;
 }
 
@@ -1019,8 +1019,8 @@ footer .logo{
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 18px;
-	margin-left: auto;
     margin-top: 27px;
+    letter-spacing: 0.03em;
 }
 
 .button-catalog{
@@ -1179,7 +1179,7 @@ footer .logo{
 	margin: 0 auto 66px;
 	max-width: 1160px;
 	box-sizing: content-box;
-	background-image: linear-gradient(to bottom, var(--basic-color) 28%, var(--five-color) 28%);
+	background-image: linear-gradient(to bottom, var(--basic-color) 24%, var(--five-color) 24%);
 	position: relative;
 }
 
@@ -1288,7 +1288,7 @@ footer .logo{
 	display: flex;
     flex-wrap: wrap;
     margin-left: 130px;
-    margin-top: 58px;
+    margin-top: 61px;
     letter-spacing: 0.2em;
 }
 
@@ -1324,7 +1324,7 @@ footer .logo{
 .slider-toggle{
 	width: 15px;
 	height: 15px;
-	background-image: url('../img/slider-button-empty.svg');
+	background-image: url('../img/slider_button_empty.svg');
 	background-repeat: no-repeat;
 	background-position: 50%;
 	border: none; 
@@ -1333,7 +1333,7 @@ footer .logo{
 }
 
 .slider-toggle-active{
-	background-image: url('../img/slider-button.svg');
+	background-image: url('../img/slider_button.svg');
 	background-position: center;
 }
 
@@ -1349,16 +1349,17 @@ footer .logo{
 }
 
 .categories a{
-    padding-top: 197px;
-	color:var(--first-color);
-	font-family: var(--second-font);
-	font-style: normal;
-	position: relative;
-	min-height: 45px;
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 22px;
-	display: block;
+    padding-top: 198px;
+    color: var(--first-color);
+    font-family: var(--second-font);
+    font-style: normal;
+    position: relative;
+    min-height: 45px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    line-height: 22px;
+    display: block;
 }
 
 .categories li a::before{
@@ -1374,7 +1375,7 @@ footer .logo{
 }
 
 .categories-item:nth-child(1) a::after{
-	background-image: url('../img/popular-1.svg');
+	background-image: url('../img/popular_1.svg');
 	content: '';
     width: 160px;
     height: 160px;
@@ -1385,7 +1386,7 @@ footer .logo{
     top: 0;}
 
 .categories-item:nth-child(2) a::after{
-	background-image: url('../img/popular-2.svg');
+	background-image: url('../img/popular_2.svg');
 	content: '';
     width: 160px;
     height: 160px;
@@ -1433,7 +1434,7 @@ footer .logo{
 }
 
 .categories-item:nth-child(6) a::after{
-	background-image: url('../img/popular-6.svg');
+	background-image: url('../img/popular_6.svg');
 	content: '';
     width: 160px;
     height: 160px;
@@ -1751,7 +1752,7 @@ footer .logo{
 }
 
 .range-controls .bar{
-	width: 70%;
+	width: 60%;
 	height: 2px;
 	background-color: var(--fourteen-color);
 }
@@ -1775,7 +1776,7 @@ footer .logo{
 }
 
 .range-controls .toggle-max{
-	left: 134px;
+	left: 113px;
 }
 
 .price-control input{
@@ -1794,7 +1795,7 @@ footer .logo{
 	width: 24px;
 	height: 24px;
 	margin-right: 19px;
-	background-image: url('../img/checkbox-on.svg');
+	background-image: url('../img/checkbox_on.svg');
 }
 
 .custom-checkbox:checked+label::before{
@@ -1803,11 +1804,11 @@ footer .logo{
 	width: 24px;
 	vertical-align: middle;
 	height: 24px;
-	background-image: url('../img/checkbox-on-t.svg');
+	background-image: url('../img/checkbox_on_t.svg');
 }
 
 .custom-radio+label::before{
-	content: url('../img/radio-on.svg');
+	content: url('../img/radio_on.svg');
 	display: inline-block;
 	vertical-align: middle;
 	width: 24px;
@@ -1874,7 +1875,7 @@ footer .logo{
 }
 
 .custom-radio:checked+label:before{
-	content: url('../img/radio-on-t.svg');
+	content: url('../img/radio_on_t.svg');
 	display: inline-block;
 	vertical-align: middle;
 	width: 24px;
@@ -1943,7 +1944,7 @@ footer .logo{
 	display: block;
 	background-repeat: no-repeat;
 	background-size: 55%;
-	background-image: url('../img/icon-down-dir.svg');
+	background-image: url('../img/icon_down_dir.svg');
 	background-position: center;
 	opacity: 0.3;
 	margin-top: 7px;
@@ -2307,6 +2308,7 @@ footer .logo{
 	background-color: inherit;
     border: none;
     width: 60px;
+    margin-left: 6px;
 }
 
 .min-price,
@@ -2314,6 +2316,10 @@ footer .logo{
 	display: flex;
 	margin-top: 20px;
     margin-left: -15px;
+}
+
+.max-price{
+    margin-left: -27px;
 }
 
 .filter-color label{
