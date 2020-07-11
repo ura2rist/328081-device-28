@@ -1,4 +1,4 @@
-let form = document.querySelector('#popup-form');
+const form = document.querySelector('#popup-form');
 
 document.getElementById('view-form').addEventListener('click', function(event){
 	formToggle(event);
@@ -15,7 +15,7 @@ function closeForm(e){
 	for(list of lists){
 		list.classList.remove('error-form');
 	}
-}
+};
 
 document.getElementById('map').addEventListener('click', function(event){
 	mapToggle(event);
@@ -29,13 +29,13 @@ function mapToggle(e){
 	e.preventDefault();
 	let map = document.querySelector('.map');
 	map.classList.toggle('map-active');
-}
+};
 
 function formToggle(e){
 	e.preventDefault();
 	let modal = document.querySelector('#modal-form');
 	modal.classList.toggle('view-form');
-}
+};
 
 if (form){
 	form.addEventListener('invalid', checkForm, true)
@@ -46,6 +46,6 @@ if (form){
 		console.log('невалидно');
 		target.addEventListener("input", function(evt) {
 			target.classList.remove('error-form');
-		})
-	}
-}
+		});
+	};
+};
