@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Юра Пахан](https://up.htmlacademy.ru/htmlcss/28/user/328081).
+* Студент: [Юра Горячев](https://up.htmlacademy.ru/htmlcss/28/user/328081).
 * Наставник: [Карина Карапетян](https://htmlacademy.ru/profile/karinaweb).
 
 ---
